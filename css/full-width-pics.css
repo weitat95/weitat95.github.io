@@ -1,0 +1,202 @@
+/*!
+ * Start Bootstrap - Full Width Pics (https://startbootstrap.com/template-overviews/full-width-pics)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+.bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.note-description{
+  background-color: 'red';
+  color: '#fff';
+}
+div.home-title {
+  float: left;
+  width: 100%;
+  position: relative;
+  height: 72px;
+}
+
+span.title-line{
+  content: "";
+  border-bottom: 1px solid #A12667;
+  width: 400px;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  bottom: 40px;
+  z-index: 0;
+}
+span.about-us-txt {
+  left: 50%;
+  margin-left: -120px;
+}
+span.our-service-txt{
+  left:50%;
+  margin-left: -145px;
+}
+
+span.title-wrap {
+  background-color: #fff;
+  width: auto;
+  display: inline-block;
+  padding: 9px 6px;
+  position: absolute;
+}
+
+span.title-wrap-service {
+  background-color: #f5f5f5;
+  width: auto;
+  display: inline-block;
+  padding: 9px 6px;
+  position: absolute;
+}
+
+section.service-section{
+  background-color: #f5f5f5;
+}
+
+span.title-txt{
+  font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 36px;
+    text-transform: uppercase;
+    float: left;
+}
+
+
+i.title-img{
+  float:left;
+  padding:11px 12px 11px 2px;
+  vertical-align:middle;
+  
+}
+
+
+.wrimagecard{	
+	margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    position: relative;
+    background: #fff;
+    box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.wrimagecard .fa{
+	position: relative;
+    font-size: 70px;
+}
+.wrimagecard-topimage_header{
+padding: 20px;
+}
+a.wrimagecard:hover, .wrimagecard-topimage:hover {
+    box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
+}
+.wrimagecard-topimage a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.wrimagecard-topimage_title {
+    padding: 20px 24px;
+    /*height: 220px;*/
+    padding-bottom: 0.75rem;
+    position: relative;
+}
+.wrimagecard-topimage a {
+    border-bottom: none;
+    text-decoration: none;
+    color: #525c65;
+    transition: color 0.3s ease;
+}
+
+
+div.register-bg {
+  background: url(./../img/register-bg.jpg) no-repeat;
+  background-position: center center;
+  float: left;
+  width: 100%;
+  background-size: cover;
+}
+
+div.overlay-shade {
+  float: left;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+div.register-contnent-wrap {
+  float: left;
+  width: 98%;
+  margin: 1% 1%;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.register-contnent-wrap h3 {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.btn-style {
+  background-color: ghostwhite;
+  border-color: rgb(165, 30, 100);
+  color: #A01F62;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-header {
+  color: #A01F62;
+  font-size: 20px;
+  border-bottom: 1px solid #A2A0A1;
+  padding-bottom: 8px;
+}
+
+footer ul li a {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid;
+  text-align: left;
+  color: #5D5D5D;
+  font-size: 16px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+
+.address-section-right {
+  float: right;
+  width: 88%;
+}
+.address-section-icon {
+  float: left;
+}
+
+.address-section li {
+  border-bottom: 1px solid;
+  float: left;
+  padding: 10px 0;
+  width: 100%;
+}

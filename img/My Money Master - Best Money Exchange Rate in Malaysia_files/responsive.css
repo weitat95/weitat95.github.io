@@ -1,0 +1,511 @@
+/** responsive css **/
+
+@media only screen and (min-width: 768px) {
+    .header .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .header .container-fluid .navbar-collapse {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .footer-width {
+        float: left;
+        width: 100%;
+    }
+    .about-us-split {
+        width: 100%;
+    }
+	.our-service-head {  font-size: 26px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 15px;
+        padding: 14px 12px;
+    }
+    .contact-nor {
+        font-size: 16px;
+    }
+    .login-btn {
+        padding: 6px 5px;
+    }
+    .rating-content ul {
+        padding: 0 20px;
+    }
+    .rating-content ul li {
+        margin: 14px 0;
+        padding: 0 4px;
+    }
+    
+    .rating-header {
+        font-size: 15px;
+        padding: 15px 17px;
+    }
+    .best-icon > img {
+        float: left;
+        width: 86px;
+    }
+    .best-icon-txt {
+        font-size: 17px;
+    }
+    .gray-box-layout {
+        font-size: 34px;
+    }
+    .simply-scroll {
+        height: auto;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .best-icon-txt {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 12px;
+        padding: 18px 34px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .contact-nor {
+        font-size: 18px;
+    }
+    .rating-content {
+        background: #333 none repeat scroll 0 0;
+        width: 100%;
+    }
+    .login-btn {
+        float: right;
+    }
+    .top-right-sec {
+        margin: 12px 0 0;
+    }
+    .about-us-split {
+        margin: 10px auto;
+        width: 100%;
+    }
+    .gray-box-layout {
+        font-size: 24px;    
+    }
+    .best-icon-txt {
+        font-size: 24px;
+        margin-top: 22px;
+    }
+    .simply-scroll {
+        height: auto;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .simply-scroll .simply-scroll-clip {
+        width: 100%;
+    }
+    .page-banner p {
+        width: 100%;
+    }
+	.carousel .item {min-height: auto;}
+	.ratings-wrapper { position: relative;}
+	.converter-icon {
+    padding: 0px;
+}
+.currency-converter-header .arrow-right-header {
+    display: none;
+}
+.currency-converter-header {
+    width: 100%;
+}
+	
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .rating-content ul {
+        padding: 0 8px;
+    }
+    .rating-content ul li {
+        margin: 17px 0;
+        padding: 0 5px;
+    }
+    .rating-header {
+        border-bottom: 1px solid #ccc;
+        font-size: 17px;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .banner-text {
+        font-size: 22px;
+    }
+    .banner-text-bg {
+        font-size: 15px;
+    }
+    .note-description {
+        font-size: 16px;
+    }
+    .title-txt {
+        font-size: 30px;
+        line-height: 59px;
+    }
+	.word-wide-dropdown { 
+    text-align: center;
+    width: 100%;
+}
+.currencty-converter-txt,.currencty-converter-time {	width: 100%;	text-align: center;}
+.travel-estimate-wrap {	margin-bottom: 20px;}
+.currency-txt-plan { font-size: 20px;}
+.currency-img-plan img {  width: 35px;}
+.currency-convert-country, .currency-convert-short {	font-size: 16px;}
+.currency-convert-sec-3-right {  text-align: center;width: 100%;}
+.currency-convert-3-1 {  width: 100%; text-align: center;}
+.currency-convert-sec-3-left,.currency-convert-sec-3-btm {	float: none;}
+.contact-page-txt {width: 80%;}
+}
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .rating-content ul {
+        padding: 0 8px;
+    }
+    .rating-content ul li {
+        font-size: 21px;
+    }
+    .rating-header {
+        border-bottom: 1px solid #ccc;
+        font-size: 22px;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .banner-text {
+        font-size: 34px;
+    }
+    .banner-text-bg {
+        font-size: 26px;
+    }
+    .note-description {
+        font-size: 16px;
+    }
+	
+}
+
+@media only screen and (min-width: 768px){
+.flag-image-rate img {
+    width: 60%;
+    margin-left: 13px;
+}
+}
+@media only screen and (max-width: 767px){
+	.card { width: 290px;  height: 214px;}
+	.container-box {width: 300px;height: 255px;}
+.flag-image-rate {   text-align: center;}
+.country-flag img {width: 40px;}
+.rate-board-country {font-size: 14px;}
+.rating-box {
+  height: 84px;
+  width: 83px;
+     padding: 5px 6px;
+}
+.unit-box-wrap { 
+  width: 72px;
+}
+.rating-box-1 {font-size: 12px;}
+.rating-box-2-1 {font-size: 32px;}
+.rating-box-2-2 {
+    font-size: 14px;
+    margin: 7px 0 0 9px;
+}
+.rating-box-2-3 img {
+  width: 14px;
+}
+.unit-box-header {
+  font-size: 18px;
+  padding: 0;
+}
+.unit-box-value {
+    font-size: 17px;
+    padding: 7px 0;
+}
+.money-master-table {
+    margin-top: 20px;
+}
+ .rate-board-tab-sectionss  > li {
+    margin: 6px 0;
+    text-align: center;
+    width: 100%;
+}
+.rate-board-filter-txt-field {
+    float: none !important;  
+    margin: 0 auto;   
+}
+.rate-board-filter-label {
+  width: 100%;
+  text-align: center;
+}
+.pull-left.filter-left-section {
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+.filter-live-rate, .filter-time, .filter-date {
+  display: inline-block;
+  float:none;
+  margin-top:10px;
+  
+}
+.pull-right.filter-right-section {
+  text-align: center;
+  width: 100%;
+}
+.rate-board-filter-txt-field {
+  display: inline-block;
+  width:100%;
+  text-align:center;
+}
+.currency-tbody-wrap {
+  display: flex;
+  width: 267px !important;
+}
+.money-master-table-header .back-btn-wrap {
+width: 100%;
+text-align: center;
+float: left;
+margin: 10px 0;
+}
+.money-master-table-header .back-btn-wrap .money-master-table-back-btn {
+    float: none;
+}
+.money-master-table-body .table td{
+    width: 100% !important;
+	display:block;
+	text-align:center;
+}
+.money-master-table-body .table tr {
+    margin: 0px 0 5px !important;
+    display: block;
+    border: 1px solid #Ccc;
+}
+.money-master-table-body .table td:first-child
+{
+   width: 100% !important;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+	.rate-board-table li {  margin-right: 11px;   width: 265px;}
+	.rate-board-table {float: none;margin: 0 auto;width: 552px;}
+	.container-box {  height: 340px;}
+	.nav-tabs > li > a {  font-size: 15px;  margin-right: 5px;  padding: 6px 8px;}
+	.tab-content .rate-board-table {  width: 100%;}
+	.tab-content .rate-board-table td {font-size: 11px;}
+	.filter-live-rate, .filter-time, .filter-date { 
+    font-size: 12px;
+    padding: 5px;
+    margin-right: 12px;
+}
+.rate-board-filter-label {
+    font-size: 16px;
+    padding: 6px 10px 6px 0;
+}
+.rate-board-filter-txt-field {
+    padding: 10px 6px;
+    width: 322px;
+    font-size: 14px;
+}
+.filter-date {
+    padding: 4px 40px 6px 3px !important;
+}
+span.calender-icon-wrap img {
+    width: 90%;
+}
+.calender-icon-wrap {
+    padding: 4px;
+    
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+	.title-line::after {
+   margin-left: -160px;
+    width: 320px;
+}
+.our-service-txt {  
+  margin-left: -131px;
+}
+.about-us-txt { 
+    margin-left: -102px;
+    top: -8px;
+}
+.inner-page-content, .inner-page-title {
+  width: 100%;
+}
+.small-images {
+  display: inline-block;
+  float: none;
+  margin: 14px;
+}
+.inner-page-img-content,.page-title.border-bottom-title {
+    text-align: center;
+}
+
+}
+@media only screen and (min-width: 320px) and (max-width: 1199px){
+.page-title.border-bottom-title{margin-top:20px;}
+}
+@media only screen and (min-width: 1244px)
+{.container{width:1244px;}
+.navbar-inverse .navbar-nav > li > a {    padding: 18px 41px;}
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+.flag-image-rate img {
+    width: 42px;	
+}
+.rating-box-2-1 {
+  font-size: 14px !important;
+}
+/** differ font-size for rate borad **/
+
+/* two digit style example like 2.9 */
+
+.rating-box-2-1-two {
+  float: left;
+  font-size: 23px;
+  margin-top: 8px;
+}
+
+/* three digit style example like 52.9 */
+
+.rating-box-2-1-three {
+  float: left;
+  font-size: 19px;
+  margin-top: 16px;
+}
+
+/* four digit style example like 304.9 */
+
+.rating-box-2-1-four {
+  float: left;
+  font-size: 14px;
+  margin-top: 16px;
+}
+/* four digit style for unit box- example like 1000 */
+.unit-box-value-larg-txt {  
+  font-size: 14px;
+  padding: 12px 0;
+}
+
+/** differ font-size for rate borad **/
+
+
+.rate-board-box-content-footer {  font-size: 12px;}
+.box-list { margin: 22px 0 7px;}
+.graph-img-wrapper {  overflow: scroll;    width: 100%;}
+.ratings-wrapper{bottom:0px;}
+#chartjs-tooltip {    font-size: 11px;}
+.exchg-tble-flg-name {   padding-right: 22px;}
+}
+@media only screen and (min-width: 768px){
+.flag-image-rate img {  width: 42px;}
+.graph-img-wrapper {  overflow: scroll;  }
+}
+@media only screen and (min-width: 768px)and (max-width: 1200px){
+.buy-exchange-rate-table table td {
+    padding: 1px !important;
+}
+}
+
+@media only screen and (min-width: 320px)and (max-width: 991px){
+	
+	.rate-board-table table thead td:first-child, .rate-board-table table tbody td:first-child {
+    width: 295px !important;
+    position: relative;
+    padding-top: 25px !important;
+}
+
+.rate-board-arrows {
+  position: absolute !important;
+  top: 37px;
+  right:0px;
+}
+.currency-txt {
+  font-size: 15px;
+ 
+}
+.currency-convertor-value {
+    text-align: center;
+}
+.currency-convertor-value:first-child {
+	margin-top: 4px !important;
+}
+}
+
+
+
+/** 15-09-2016**/
+@media only screen and (min-width: 320px)and (max-width: 767px){
+.rate-board-filter .filter-date {
+	width: 100%;
+}
+
+.pull-right.filter-right-section .col-md-12 {
+  padding: 0;
+}
+.pull-right.filter-right-section {
+  float: left !important;
+}
+.rate-board-filter-txt-field {
+  font-size: 12px; 
+}
+.submit-cancel-btn{
+	text-align:center;
+	margin-top:8px;
+	
+}
+.graph-top #datepicker {
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 8px 0;
+    padding: 5px;
+}
+
+.buy-exchange-rate-table tr td:first-child {
+	background-color: #ccc;
+    height: 40px;
+    position: absolute;
+    width: 140px;
+}
+
+.buy-exchange-rate-table tr td:nth-child(2) {
+  padding-left: 150px !important;
+}
+.currencty-converter-time {
+    text-align: left !important;
+}
+.graph-calender-wrap {
+	clear: both;
+    float: left;
+    position: relative;
+}
+.graph-calender-wrap img {
+  position: absolute;
+ right: 7px;
+    top: 14px;
+}
+#runVideo {    
+    display: none;
+}
+}
+
+
+@media only screen and (min-width: 320px)and (max-width: 991px){
+.visit-today-rates-btn {
+    left: 16px;
+    position: absolute;
+    top: 0;
+}
+.rate-board-tab-sectionss {
+    position: relative;
+}
+.rate-board-filter {
+  padding: 4px 0;
+}
+}
