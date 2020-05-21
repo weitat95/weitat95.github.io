@@ -5,14 +5,17 @@
  */
 
  :root {
-  --accent: #143D59;
-  --primary: #F4B41A;
+  /* --accent: #143D59;
+  --primary: #F4B41A; */
   
   /* --accent:#5B0E2D;
   --primary:#FFA781; */
 
-  /* --primary:rgb(255, 100, 53);
+  /* --primary:rgb(53, 93, 255);
   --accent:rgb(35,36,30); */
+
+  --primary: #333D79ff;
+  --accent: #fff;
 
   /* --accent: #000;
   --primary: #ffffff; */
@@ -20,21 +23,22 @@
 
 
 body {
-  color: var(--accent);
+  color: var(--primary);
   font-size:15px;
   padding-top: 56px;
-  font-family: monospace;
+  font-family: sans-serif;
 }
 
-nav.navbar-color{
+nav.navbar-style{  
   background-color: var(--primary);
-} 
+  font-size: 18px;
+}
 
 span.title-chinese{
-  font-size:20px;
+  font-size:25px;
 }
 span.title-english{
-  font-size:20px;
+  font-size:25px;
 }
 
 section.tagline{
@@ -209,8 +213,12 @@ div.register-contnent-wrap {
   transition: all 0.3s ease-in-out;
 }
 
+footer {
+  font-size:10px;
+}
+
 .footer-header {
-  color: var(--accent);
+  color: var(--primary);
   font-size: 20px;
   border-bottom: 1px solid #A2A0A1;
   padding-bottom: 8px;
@@ -237,6 +245,7 @@ nav ul {
 }
 
 .address-section-right {
+  font-size:16px;
   float: right;
   width: 88%;
 }
@@ -259,7 +268,7 @@ nav ul {
   position: absolute;
   width: 100%;
   z-index: 9999;
-  bottom: 100px;
+  bottom: 46px;
 }
 
 .simply-scroll .simply-scroll-clip {
@@ -269,8 +278,8 @@ nav ul {
 }
 
 .simply-scroll {
-  height: 20px;
-  margin-bottom: 1em;
+  height: 18px;
+  margin-bottom: 5px;
   width: 100%;
 }
 .rating-content{

@@ -2,6 +2,7 @@
   border: none;
   background-color: var(--primary);
   color: var(--accent);
+  height:200px;
   padding:15px;
 }
 
