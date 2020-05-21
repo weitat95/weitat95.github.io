@@ -1,5 +1,7 @@
 .card {
   border: none;
+  background-color: var(--primary);
+  color: var(--accent);
   padding:15px;
 }
 

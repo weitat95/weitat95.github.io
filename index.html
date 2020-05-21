@@ -12,17 +12,23 @@
 
   <!-- Bootstrap core CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="jquery.simplyscroll.css" media="all" type="text/css">
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.css" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
   <link href="css/full-width-pics.css" rel="stylesheet">
   <link href="css/hori-card.css" rel="stylesheet">
+
 
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top text-center navbar-color">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top text-center navbar-color">
     <div class="container">
       <div class="row">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,17 +58,187 @@
       </div> 
     </div>
   </nav>
-  <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <div id="navcollapse" class="collapse navbar-collapse my-2">
-      <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Item 1</a>
-          <a class="nav-item nav-link" href="#">Item 2</a>
-          <a class="nav-item nav-link" href="#">Item 3</a>
-          <a class="nav-item nav-link" href="#">Item 4</a>
-      </div>
-  </div>
-  </nav> -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top text-center" style="height:188px; color:white">
+    <div class="ratings-wrapper" style="opacity: 1; left:-1px;">
+      <div class="simply-scroll simply-scroll-container">
+        <div class="simply-scroll-clip">
+          <div class="simply-scroll-list" style="width: 8546px;">
+            <div class="rating-content simply-scroll-list" id="scroller" style="float: left;width: 4273px;">
+              <li>
+                <ul>
+                  <li> 
+                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1464532264_mmmm_united-states-of-america(usa).png" alt="UNITED STATES" style="width:30px;">
+                  </li>
+                  <li><span style="color:#FFF;">USD</span>:</li>
+                  <li><span class="purple-color">BUY</span> 4.280 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span> /</li>
+                  <li><span class="purple-color">SELL</span> 4.33 <span class="red-color">(-0.010<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
+                </ul>
+              </li>
 
+              <li>
+                <ul>
+                  <li>
+                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/uk.png" alt="UNITED KINGDOM" style="width:30px;">
+                  </li>
+                  <li><span style="color:#FFF;">GBP</span>:</li>
+                  <li><span class="purple-color">BUY</span> 5.20 <span class="red-color">(-0.030<span class="glyphicon glyphicon-triangle-bottom"></span>)</span> /</li>
+                  <li><span class="purple-color">SELL</span> 5.29 <span class="red-color">(-0.045<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
+                </ul>
+              </li>
+
+              <li>
+                <ul>
+                  <li>
+                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1465468683_mmmm_european-union.png" alt="EUROPEAN UNION" style="width:30px;">
+                  </li>
+                  <li><span style="color:#FFF;">EUR</span>:</li>
+                  <li><span class="purple-color">BUY</span> 4.665 <span class="green-color">(0.015<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
+                  <li><span class="purple-color">SELL</span> 4.73 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span></li>
+                </ul>
+              </li>
+
+              <li>
+                <ul>
+                  <li>
+                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1465464977_mmmm_china.png" alt="CHINA" style="width:30px;">
+                  </li>
+                  <li><span style="color:#FFF;">CNY</span>:</li>
+                  <li><span class="purple-color">BUY</span> 58.80 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span> /</li>
+                  <li><span class="purple-color">SELL</span> 60.20 <span class="red-color">(-0.300<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>
+                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/Japan.png" alt="JAPAN" style="width:30px;">
+                  </li>
+                  <li><span style="color:#FFF;">JPY</span>:</li>
+                  <li><span class="purple-color">BUY</span> 39.00 <span class="green-color">(0.200<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
+                  <li><span class="purple-color">SELL</span> 40.00 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span></li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>
+                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1464950841_mmm_hong-kong.png" alt="HONG KONG" style="width:30px;">
+                  </li>
+                  <li><span style="color:#FFF;">HKD</span>:</li>
+                  <li><span class="purple-color">BUY</span> 53.50 <span class="green-color">(0.200<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
+                  <li><span class="purple-color">SELL</span> 55.50 <span class="red-color">(-0.300<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
+                </ul>
+              </li>
+
+              <li>
+                <ul>
+                  <li>
+                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/Australia.png" alt="AUSTRALIA" style="width:30px;">
+                  </li>
+                  <li><span style="color:#FFF;">AUD</span>:</li>
+                  <li><span class="purple-color">BUY</span> 2.75 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span> /</li>
+                  <li><span class="purple-color">SELL</span> 2.82 <span class="green-color">(0.010<span class="glyphicon glyphicon-triangle-top"></span>)</span></li>
+                </ul>
+              </li>
+
+              <li>
+                <ul>
+                  <li>
+                        <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/Singapore.png" alt="SINGAPORE" style="width:30px;">
+                  </li>
+                  <li><span style="color:#FFF;">SGD</span>:</li>
+                  <li><span class="purple-color">BUY</span> 3.00 <span class="green-color">(0.010<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
+                  <li><span class="purple-color">SELL</span> 3.05 <span class="green-color">(0.005<span class="glyphicon glyphicon-triangle-top"></span>)</span></li>
+                </ul>
+              </li>
+           </div><div class="rating-content simply-scroll-list" id="scroller" style="float: left; width: 4273px;">
+               <li>
+  <ul>
+     <li>
+          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1464532264_mmmm_united-states-of-america(usa).png" alt="UNITED STATES" style="width:30px;">
+     </li>
+     <li><span style="color:#FFF;">USD</span>:</li>
+     <li><span class="purple-color">BUY</span> 4.280 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span> /</li>
+     <li><span class="purple-color">SELL</span> 4.33 <span class="red-color">(-0.010<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
+  </ul>
+</li>
+              <li>
+  <ul>
+     <li>
+          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/uk.png" alt="UNITED KINGDOM" style="width:30px;">
+     </li>
+     <li><span style="color:#FFF;">GBP</span>:</li>
+     <li><span class="purple-color">BUY</span> 5.20 <span class="red-color">(-0.030<span class="glyphicon glyphicon-triangle-bottom"></span>)</span> /</li>
+     <li><span class="purple-color">SELL</span> 5.29 <span class="red-color">(-0.045<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
+  </ul>
+</li>
+              <li>
+  <ul>
+     <li>
+          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1465468683_mmmm_european-union.png" alt="EUROPEAN UNION" style="width:30px;">
+     </li>
+     <li><span style="color:#FFF;">EUR</span>:</li>
+     <li><span class="purple-color">BUY</span> 4.665 <span class="green-color">(0.015<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
+     <li><span class="purple-color">SELL</span> 4.73 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span></li>
+  </ul>
+</li>
+              <li>
+  <ul>
+     <li>
+          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1465464977_mmmm_china.png" alt="CHINA" style="width:30px;">
+     </li>
+     <li><span style="color:#FFF;">CNY</span>:</li>
+     <li><span class="purple-color">BUY</span> 58.80 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span> /</li>
+     <li><span class="purple-color">SELL</span> 60.20 <span class="red-color">(-0.300<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
+  </ul>
+</li>
+              <li>
+  <ul>
+     <li>
+          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/Japan.png" alt="JAPAN" style="width:30px;">
+     </li>
+     <li><span style="color:#FFF;">JPY</span>:</li>
+     <li><span class="purple-color">BUY</span> 39.00 <span class="green-color">(0.200<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
+     <li><span class="purple-color">SELL</span> 40.00 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span></li>
+  </ul>
+</li>
+              <li>
+  <ul>
+     <li>
+          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1464950841_mmm_hong-kong.png" alt="HONG KONG" style="width:30px;">
+     </li>
+     <li><span style="color:#FFF;">HKD</span>:</li>
+     <li><span class="purple-color">BUY</span> 53.50 <span class="green-color">(0.200<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
+     <li><span class="purple-color">SELL</span> 55.50 <span class="red-color">(-0.300<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
+  </ul>
+</li>
+              <li>
+  <ul>
+     <li>
+          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/Australia.png" alt="AUSTRALIA" style="width:30px;">
+     </li>
+     <li><span style="color:#FFF;">AUD</span>:</li>
+     <li><span class="purple-color">BUY</span> 2.75 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span> /</li>
+     <li><span class="purple-color">SELL</span> 2.82 <span class="green-color">(0.010<span class="glyphicon glyphicon-triangle-top"></span>)</span></li>
+  </ul>
+</li>
+              <li>
+                <ul>
+                  <li>
+                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/Singapore.png" alt="SINGAPORE" style="width:30px;">
+                  </li>
+                  <li><span style="color:#FFF;">SGD</span>:</li>
+                  <li><span class="purple-color">BUY</span> 3.00 <span class="green-color">(0.010<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
+                  <li><span class="purple-color">SELL</span> 3.05 <span class="green-color">(0.005<span class="glyphicon glyphicon-triangle-top"></span>)</span></li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>         
+    </div>
+  </nav>
+  <section class="py-1" style="height:29px;">
+
+  </section>
   <section class="py-1">
     <div class="container">
       <div class= "row">
@@ -84,6 +260,7 @@
   <header class="py-5 bg-image-full" style="background-image: url('./img/banner3.jpg');">
     <div class="container" style="height:200px;"></div>
   </header>
+
 
   <section class="py-5 tagline">
     <div class="container-fluid" >
@@ -120,8 +297,8 @@
     <div class="row">
       <div class="col-md-4 col-sm-12">
     <div class="wrimagecard wrimagecard-topimage">
-            <div class="wrimagecard-topimage_header" style="background-color:rgba(187, 120, 36, 0.1) ">
-              <center><i class="fa fa-thumbs-up" style="color:#BB7824"></i></center>
+            <div class="wrimagecard-topimage_header">
+              <center><i class="fa fa-thumbs-up card-icon" ></i></center>
             </div>
             <div class="wrimagecard-topimage_title">
               <h4>BEST EXCHANGE RATE GUARANTEE</h4>
@@ -134,8 +311,8 @@
       </div>
       <div class="col-md-4 col-sm-12">
         <div class="wrimagecard wrimagecard-topimage">
-            <div class="wrimagecard-topimage_header" style="background-color: rgba(22, 160, 133, 0.1)">
-              <center><i class = "fa fa-rocket" style="color:#16A085"></i></center>
+            <div class="wrimagecard-topimage_header">
+              <center><i class = "fa fa-rocket card-icon"></i></center>
             </div>
             <div class="wrimagecard-topimage_title">
               <h4>MONEY EXCHANGE EXPERTS</h4>
@@ -148,8 +325,8 @@
       </div>
       <div class="col-md-4 col-sm-12">
         <div class="wrimagecard wrimagecard-topimage">
-            <div class="wrimagecard-topimage_header" style="background-color:  rgba(213, 15, 37, 0.1)">
-              <center><i class="fa fa-paper-plane" style="color:#d50f25"> </i></center>
+            <div class="wrimagecard-topimage_header">
+              <center><i class="fa fa-paper-plane card-icon"> </i></center>
             </div>
             <div class="wrimagecard-topimage_title" >
               <h4>EXCELLENT EXPERIENCE</h4>
@@ -327,10 +504,15 @@
   <!-- Bootstrap core JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link 
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
-  rel="stylesheet"  type='text/css'>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
 
+  <script type="text/javascript">
+    (function($) {
+      $(function() { //on DOM ready 
+            $("#scroller").simplyScroll();
+      });
+     })(jQuery);
+    </script>
 </body>
 
 </html>

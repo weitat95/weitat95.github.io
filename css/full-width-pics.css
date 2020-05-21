@@ -5,12 +5,22 @@
  */
 
  :root {
-  --primary: #000000;
-  --accent: #00b;
+  --accent: #143D59;
+  --primary: #F4B41A;
+  
+  /* --accent:#5B0E2D;
+  --primary:#FFA781; */
+
+  /* --primary:rgb(255, 100, 53);
+  --accent:rgb(35,36,30); */
+
+  /* --accent: #000;
+  --primary: #ffffff; */
 }
 
 
 body {
+  color: var(--accent);
   font-size:15px;
   padding-top: 56px;
   font-family: monospace;
@@ -29,11 +39,13 @@ span.title-english{
 
 section.tagline{
   background-color: var(--primary);
-  color: #fff;
+  color: var(--accent);
+  font-size:20px;
+
 }
 
 i.faicons{
- color: var(--primary); 
+ color: var(--accent); 
 }
 
 .bg-image-full {
@@ -46,7 +58,7 @@ i.faicons{
 
 .note-description{
   background-color: var(--primary);
-  color: '#fff';
+  color: var(--accent);
 }
 div.home-title {
   float: left;
@@ -118,7 +130,8 @@ i.title-img{
     margin-bottom: 1.5rem;
     text-align: left;
     position: relative;
-    background: #fff;
+    background: var(--primary);
+    color: var(--accent);
     box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
     border-radius: 4px;
     transition: all 0.3s ease;
@@ -128,7 +141,8 @@ i.title-img{
     font-size: 70px;
 }
 .wrimagecard-topimage_header{
-padding: 20px;
+  padding: 20px;
+  background-color:var(--accent);
 }
 a.wrimagecard:hover, .wrimagecard-topimage:hover {
     box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
@@ -150,6 +164,9 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
     color: #525c65;
     transition: color 0.3s ease;
 }
+i.card-icon {
+  color: var(--primary);
+}
 
 
 div.register-bg {
@@ -170,7 +187,7 @@ div.register-contnent-wrap {
   float: left;
   width: 98%;
   margin: 1% 1%;
-  border: 1px solid #fff;
+  border: 1px solid var(--accent);
   box-sizing: border-box;
   padding: 30px;
 }
@@ -193,7 +210,7 @@ div.register-contnent-wrap {
 }
 
 .footer-header {
-  color: var(--primary);
+  color: var(--accent);
   font-size: 20px;
   border-bottom: 1px solid #A2A0A1;
   padding-bottom: 8px;
@@ -232,4 +249,47 @@ nav ul {
   float: left;
   padding: 10px 0;
   width: 100%;
+}
+
+
+/* Scroller */
+.ratings-wrapper {
+  background-color: rgba(0, 0, 0, 0.7);
+  float: left;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+  bottom: 100px;
+}
+
+.simply-scroll .simply-scroll-clip {
+  float: right;
+  height: 20px;
+  width: 100%;
+}
+
+.simply-scroll {
+  height: 20px;
+  margin-bottom: 1em;
+  width: 100%;
+}
+.rating-content{
+  float:left;
+}
+
+.rating-content li:first-child, .rating-content li:last-child {
+  border-right: 0;
+}
+
+.simply-scroll .simply-scroll-list li {
+  float: left;
+  height: auto;
+  width: auto;
+}
+
+.rating-content ul {
+  padding: 0 30px;
+  list-style-type: none;
+  float: left;
+  margin-bottom: 0;
 }
