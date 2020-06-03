@@ -1,519 +1,1059 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Money Transfer | Currency Exchange</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-  <title>Trident SMT Exchange</title>
-  <link rel='icon' href="./img/trident_logo.png" type="image/x-icon"/>
-  <!-- Bootstrap core CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
 
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.css" rel="stylesheet" type="text/css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-  <!-- Custom styles for this template -->
-  <link href="css/full-width-pics.css" rel="stylesheet">
-  <link href="css/hori-card.css" rel="stylesheet">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top text-center navbar-style">
-    <div class="container">
-      <div class="row">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link smooth-goto" href="#home">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link smooth-goto" href="#about-us">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link smooth-goto" href="#exchange-rate">Exchange Rate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link smooth-goto" href="#contact-us">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div> 
-    </div>
-  </nav>
+	<div class="colorlib-loader"></div>
 
-  <!-- Exchange Rate Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top text-center" style="height:20px; top:107px; color:white;">
-    <div class="ratings-wrapper" style="opacity: 1; left:-1px;">
-      <div class="simply-scroll simply-scroll-container">
-        <div class="simply-scroll-clip">
-          <div class="simply-scroll-list" style="width: 8546px;">
-            <div class="rating-content simply-scroll-list" id="scroller" style="float: left;width: 4273px; height:20px;">
-              <li>
-                <ul>
-                  <li> 
-                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1464532264_mmmm_united-states-of-america(usa).png" alt="UNITED STATES" style="width:30px;">
-                  </li>
-                  <li><span style="color:#FFF;">USD</span>:</li>
-                  <li><span class="purple-color">BUY</span> 4.280 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span> /</li>
-                  <li><span class="purple-color">SELL</span> 4.33 <span class="red-color">(-0.010<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
-                </ul>
-              </li>
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div id="colorlib-logo"><a href="index.html">Unapp</a></div>
+						</div>
+						<div class="col-md-10 text-right menu-1">
+							<ul>
+								<li class="active"><a href="index.html">Home</a></li>
+								<li class="has-dropdown">
+									<a href="#">Works</a>
+									<!-- <ul class="dropdown">
+										<li><a href="work-grid.html">Works grid with text</a></li>
+										<li><a href="work-grid-without-text.html">Works grid w/o text</a></li>
+									</ul> -->
+								</li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
 
-              <li>
-                <ul>
-                  <li>
-                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/uk.png" alt="UNITED KINGDOM" style="width:30px;">
-                  </li>
-                  <li><span style="color:#FFF;">GBP</span>:</li>
-                  <li><span class="purple-color">BUY</span> 5.20 <span class="red-color">(-0.030<span class="glyphicon glyphicon-triangle-bottom"></span>)</span> /</li>
-                  <li><span class="purple-color">SELL</span> 5.29 <span class="red-color">(-0.045<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
-                </ul>
-              </li>
+		<section id="home" class="video-hero"
+			style="height: 700px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;"
+			data-section="home">
+			<div class="overlay"></div>
+			<a class="player"
+				data-property="{videoURL:'https://www.youtube.com/watch?v=vqqt5p0q-eU',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
+			<div class="display-t text-center">
+				<div class="display-tc">
+					<div class="container">
+						<div class="col-md-12 col-md-offset-0">
+							<div class="animate-box">
+								<h2>ENJOY GREAT EXCHANGE RATES</h2>
+								<p>from North Block Central City Exchange</p>
+								<p><a href="#" class="btn btn-primary btn-lg btn-custom">Get premium</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-              <li>
-                <ul>
-                  <li>
-                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1465468683_mmmm_european-union.png" alt="EUROPEAN UNION" style="width:30px;">
-                  </li>
-                  <li><span style="color:#FFF;">EUR</span>:</li>
-                  <li><span class="purple-color">BUY</span> 4.665 <span class="green-color">(0.015<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
-                  <li><span class="purple-color">SELL</span> 4.73 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span></li>
-                </ul>
-              </li>
+		<!-- <div class="colorlib-featured">
+			<div class="row animate-box">
+				<div class="featured-wrap">
+					<div class="owl-carousel">
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<div class="featured-entry">
+									<img class="img-responsive" src="images/dashboard_full_1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<div class="featured-entry">
+									<img class="img-responsive" src="images/dashboard_full_2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<div class="featured-entry">
+									<img class="img-responsive" src="images/dashboard_full_3.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
 
-              <li>
-                <ul>
-                  <li>
-                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1465464977_mmmm_china.png" alt="CHINA" style="width:30px;">
-                  </li>
-                  <li><span style="color:#FFF;">CNY</span>:</li>
-                  <li><span class="purple-color">BUY</span> 58.80 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span> /</li>
-                  <li><span class="purple-color">SELL</span> 60.20 <span class="red-color">(-0.300<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li>
-                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/Japan.png" alt="JAPAN" style="width:30px;">
-                  </li>
-                  <li><span style="color:#FFF;">JPY</span>:</li>
-                  <li><span class="purple-color">BUY</span> 39.00 <span class="green-color">(0.200<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
-                  <li><span class="purple-color">SELL</span> 40.00 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span></li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li>
-                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1464950841_mmm_hong-kong.png" alt="HONG KONG" style="width:30px;">
-                  </li>
-                  <li><span style="color:#FFF;">HKD</span>:</li>
-                  <li><span class="purple-color">BUY</span> 53.50 <span class="green-color">(0.200<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
-                  <li><span class="purple-color">SELL</span> 55.50 <span class="red-color">(-0.300<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
-                </ul>
-              </li>
-
-              <li>
-                <ul>
-                  <li>
-                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/Australia.png" alt="AUSTRALIA" style="width:30px;">
-                  </li>
-                  <li><span style="color:#FFF;">AUD</span>:</li>
-                  <li><span class="purple-color">BUY</span> 2.75 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span> /</li>
-                  <li><span class="purple-color">SELL</span> 2.82 <span class="green-color">(0.010<span class="glyphicon glyphicon-triangle-top"></span>)</span></li>
-                </ul>
-              </li>
-
-              <li>
-                <ul>
-                  <li>
-                        <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/Singapore.png" alt="SINGAPORE" style="width:30px;">
-                  </li>
-                  <li><span style="color:#FFF;">SGD</span>:</li>
-                  <li><span class="purple-color">BUY</span> 3.00 <span class="green-color">(0.010<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
-                  <li><span class="purple-color">SELL</span> 3.05 <span class="green-color">(0.005<span class="glyphicon glyphicon-triangle-top"></span>)</span></li>
-                </ul>
-              </li>
-           </div><div class="rating-content simply-scroll-list" id="scroller" style="float: left; width: 4273px;">
-               <li>
-  <ul>
-     <li>
-          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1464532264_mmmm_united-states-of-america(usa).png" alt="UNITED STATES" style="width:30px;">
-     </li>
-     <li><span style="color:#FFF;">USD</span>:</li>
-     <li><span class="purple-color">BUY</span> 4.280 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span> /</li>
-     <li><span class="purple-color">SELL</span> 4.33 <span class="red-color">(-0.010<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
-  </ul>
-</li>
-              <li>
-  <ul>
-     <li>
-          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/uk.png" alt="UNITED KINGDOM" style="width:30px;">
-     </li>
-     <li><span style="color:#FFF;">GBP</span>:</li>
-     <li><span class="purple-color">BUY</span> 5.20 <span class="red-color">(-0.030<span class="glyphicon glyphicon-triangle-bottom"></span>)</span> /</li>
-     <li><span class="purple-color">SELL</span> 5.29 <span class="red-color">(-0.045<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
-  </ul>
-</li>
-              <li>
-  <ul>
-     <li>
-          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1465468683_mmmm_european-union.png" alt="EUROPEAN UNION" style="width:30px;">
-     </li>
-     <li><span style="color:#FFF;">EUR</span>:</li>
-     <li><span class="purple-color">BUY</span> 4.665 <span class="green-color">(0.015<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
-     <li><span class="purple-color">SELL</span> 4.73 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span></li>
-  </ul>
-</li>
-              <li>
-  <ul>
-     <li>
-          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1465464977_mmmm_china.png" alt="CHINA" style="width:30px;">
-     </li>
-     <li><span style="color:#FFF;">CNY</span>:</li>
-     <li><span class="purple-color">BUY</span> 58.80 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span> /</li>
-     <li><span class="purple-color">SELL</span> 60.20 <span class="red-color">(-0.300<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
-  </ul>
-</li>
-              <li>
-  <ul>
-     <li>
-          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/Japan.png" alt="JAPAN" style="width:30px;">
-     </li>
-     <li><span style="color:#FFF;">JPY</span>:</li>
-     <li><span class="purple-color">BUY</span> 39.00 <span class="green-color">(0.200<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
-     <li><span class="purple-color">SELL</span> 40.00 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span></li>
-  </ul>
-</li>
-              <li>
-  <ul>
-     <li>
-          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/1464950841_mmm_hong-kong.png" alt="HONG KONG" style="width:30px;">
-     </li>
-     <li><span style="color:#FFF;">HKD</span>:</li>
-     <li><span class="purple-color">BUY</span> 53.50 <span class="green-color">(0.200<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
-     <li><span class="purple-color">SELL</span> 55.50 <span class="red-color">(-0.300<span class="glyphicon glyphicon-triangle-bottom"></span>)</span></li>
-  </ul>
-</li>
-              <li>
-  <ul>
-     <li>
-          <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/Australia.png" alt="AUSTRALIA" style="width:30px;">
-     </li>
-     <li><span style="color:#FFF;">AUD</span>:</li>
-     <li><span class="purple-color">BUY</span> 2.75 <span class="blue-color">(0.000<span class="glyphicon glyphicon-triangle-equal"></span>)</span> /</li>
-     <li><span class="purple-color">SELL</span> 2.82 <span class="green-color">(0.010<span class="glyphicon glyphicon-triangle-top"></span>)</span></li>
-  </ul>
-</li>
-              <li>
-                <ul>
-                  <li>
-                    <img src="http://www.mymoneymaster.com.my/mmm_admin/assets/images/flags/Singapore.png" alt="SINGAPORE" style="width:30px;">
-                  </li>
-                  <li><span style="color:#FFF;">SGD</span>:</li>
-                  <li><span class="purple-color">BUY</span> 3.00 <span class="green-color">(0.010<span class="glyphicon glyphicon-triangle-top"></span>)</span> /</li>
-                  <li><span class="purple-color">SELL</span> 3.05 <span class="green-color">(0.005<span class="glyphicon glyphicon-triangle-top"></span>)</span></li>
-                </ul>
-              </li>
-            </div>
-          </div>
-        </div>
-      </div>         
-    </div>
-  </nav>
-  <section class="py-1" style="height:29px;">
-
-  </section>
-
-  <!-- Content-->
-  <section id="home" class="py-1">
-    <div class="container">
-      <div class= "row">
-        <div class= "col-lg-12 col-md-12 col-sm-12 col-sx-12">
-          <img class="img-responsive" style="height:50px;" src="img/trident_logo.png">
-          <span class="title-chinese">新马泰守汇</span>
-          <span class="title-english">Trident SMT Exchange</span>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- Header Image- set the background image for the header in the line below -->
-  <header class="py-5 bg-image-full" style="background-image: url('./img/banner3.jpg');">
-    <div class="container" style="height:400px;"></div>
-  </header>
-
-  <!-- Content banner-->
-  <section class="py-5 tagline">
-    <div class="container-fluid" >
-      <div class="row" >
-        <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 text-center" >
-          
-          <span> TRIDENT SMT EXCHANGE WILL PROVIDE YOU WITH THE MOST COMPETITIVE RATES ON YOUR HOLIDAY, TRAVEL, COMMERCIAL AND BUSINESS REQUIREMENT </span>
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- About us Section-->
-  <section class="py-3" id="about-us">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 text-center">
-          
-          <div class="home-title">
-            <span class="title-line" ></span>
-            <span class="title-wrap about-us-txt" >
-              <i class="fa fa-user fa-2x title-img"></i>
-              <span class="title-txt">ABOUT US</span>
-            </span>
-          </div>
-
-          <p>We offers varieties of currencies exchange with an uncompromising quality of service, volume as per your needs and the best rates available.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- Cards Section-->
-<section class="py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-12">
-    <div class="wrimagecard wrimagecard-topimage">
-            <div class="wrimagecard-topimage_header">
-              <center><i class="fa fa-thumbs-up card-icon" ></i></center>
-            </div>
-            <div class="wrimagecard-topimage_title">
-              <h4>BEST EXCHANGE RATE GUARANTEE</h4>
-              <p>
-                We are well known for our unbeatable best rate and fear nothing regarding your big volume of currency as per your needs.
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <div class="wrimagecard wrimagecard-topimage">
-            <div class="wrimagecard-topimage_header">
-              <center><i class = "fa fa-rocket card-icon"></i></center>
-            </div>
-            <div class="wrimagecard-topimage_title">
-              <h4>MONEY EXCHANGE EXPERTS</h4>
-              <p>
-                We are one of the leading currency exchange company in Malaysia with experience over fifteen years and have served to over than a million customers locally, globally and growing daily.
-              </p>  
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <div class="wrimagecard wrimagecard-topimage">
-            <div class="wrimagecard-topimage_header">
-              <center><i class="fa fa-paper-plane card-icon"> </i></center>
-            </div>
-            <div class="wrimagecard-topimage_title" >
-              <h4>EXCELLENT EXPERIENCE</h4>
-              <p>
-                Our friendly personnel are competent and courteous. We assure you the best quality of service on every transaction performed.
-              </p>  
-            </div>
-            
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Our Service Section-->
-<section class="service-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 text-center">
-
-        <div class="home-title">
-          
-          <span class="title-line" ></span>
-          <span class="title-wrap-service our-service-txt" >
-            <i class="fa fa-info fa-2x title-img"></i>
-            <span class="title-txt">OUR SERVICES</span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
-<!-- Horizontal Cards Section-->
-
-<section class="py-5 service-section">
-  <div class="container">
-    <div class="card-group vgr-cards">
-      <div class="card">
-        <div class="card-img-body">
-          <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h4 class="card-title">MONEY EXCHANGE</h4>
-          <p class="card-text">The money exchange or the foreign exchange market is a global decentralised market for trading the currencies. This include all aspects of buying, selling and exchanging currencies at current or determined prices. We deal with more than 30 most popular currencies and we provide our customer a comfortable currency trading zone where they can get the best rate by either single or multiple currency exchange.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img-body">
-          <img class="card-img" src="https://picsum.photos/400/200" alt="Card image cap"></div>
-        <div class="card-body">
-          <h4 class="card-title">EXCHANGE RATE CHARTS</h4>
-          <p class="card-text">Featuring live exchange rate chart which provide the best and up-to-date rates from the most popular currencies without commission and service charges. We are specialized more in obscure currencies which are hard to obtain from high street suppliers. We are willing to provide with the most competitive exchange rates on all your holiday, travel, commercial and business needs.</p>
-          
-        </div>
-      </div>
-      
-      
-    </div>
-  </div>
-
-</section>
-
-<section id="exchange-rate" class="py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="register-bg">
-          <div class="overlay-shade text-center">
-            <div class="register-contnent-wrap">
-              <h3>The most unbelievable exchange rates only from Trident SMT Exchange</h3>
-              <a href="#" class="btn btn-default btn-style login-btn" style="float:none;"><span class="btn-txt">Click Here</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+		<!-- <div class="colorlib-services colorlib-bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="icon-browser"></i>
+							</span>
+							<div class="desc">
+								<h3>Create your own template</h3>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and
+									Consonantia, there live the blind texts.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="icon-download"></i>
+							</span>
+							<div class="desc">
+								<h3>Automatic Backup Data</h3>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and
+									Consonantia, there live the blind texts.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="icon-layers"></i>
+							</span>
+							<div class="desc">
+								<h3>Page Builder</h3>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and
+									Consonantia, there live the blind texts.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- Money Exchange Table-->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="wpb_wrapper">
+							<div id="bfc_block_main" class="bfc_block">
 
 
-  <!-- Content section -->
-  <!-- <section class="py-5">
-    <div class="container">
-      <h1>Section Heading</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-    </div>
-  </section> -->
+								<div class="tabs">
+									<div class="active" index="1">Money Transfer</div>
+									<div class="" index="2">Money Exchange</div>
+								</div>
+								<div class="tab_content cur_content">
+									<div class="content_1 active" index="1">
+										<table cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr class="head">
+													<th> Currency </th>
+													<th> Credit to Account </th>
+													<th> Cash Pick-Up </th>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon IDR"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/02/idr.svg"
+																alt="GBP to INDONESIAN RUPIAH Exchange Rate"></div>
+														<div class="currency_name">
+															<div class="title">IDR</div>
+															<span>Indonesian Rupiah</span>
+														</div>
+													</td>
+													<td> 3246.7532 </td>
+													<td> 3246.7532 </td>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon BDT"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/01/bdt.svg"
+																alt="Pound Sterling to Bangladeshi Taka Exchange Rate">
+														</div>
+														<div class="currency_name">
+															<div class="title">BDT</div>
+															<span>Bangladeshi Taka</span>
+														</div>
+													</td>
+													<td> 19.6800 </td>
+													<td> 19.6800 </td>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon NPR"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/01/npr.svg"
+																alt="Pound Sterling to Nepalese Rupee Exchange Rate">
+														</div>
+														<div class="currency_name">
+															<div class="title">NPR</div>
+															<span>Nepalese Rupee</span>
+														</div>
+													</td>
+													<td> 27.8500 </td>
+													<td> 27.8805 </td>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon PHP"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/01/php.svg"
+																alt="Pound Sterling to Philippine Peso Exchange Rate">
+														</div>
+														<div class="currency_name">
+															<div class="title">PHP</div>
+															<span>Philippine Peso</span>
+														</div>
+													</td>
+													<td> 11.6200 </td>
+													<td> 11.6200 </td>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon INR"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/01/inr.svg"
+																alt="Pound Sterling to Indian Rupee Exchange Rate">
+														</div>
+														<div class="currency_name">
+															<div class="title">INR</div>
+															<span>Indian Rupee</span>
+														</div>
+													</td>
+													<td> 17.3500 </td>
+													<td> 17.3500 </td>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon PKR"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/01/pkr.svg"
+																alt="Pound Sterling to Pakistan Rupee Exchange Rate">
+														</div>
+														<div class="currency_name">
+															<div class="title">PKR</div>
+															<span>Pakistan Rupee</span>
+														</div>
+													</td>
+													<td> 37.4000 </td>
+													<td> 37.4187 </td>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon LKR"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/01/lkr.svg"
+																alt="Pound Sterling to Sri Lanka Rupee Exchange Rate">
+														</div>
+														<div class="currency_name">
+															<div class="title">LKR</div>
+															<span>Sri Lankan Rupee</span>
+														</div>
+													</td>
+													<td> 42.7000 </td>
+													<td> 42.7047 </td>
+												</tr>
+											</tbody>
+										</table>
 
-  <!-- Image Section - set the background image for the header in the line below -->
-  <section class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1081');">
-    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-    <div style="height: 200px;"></div>
-  </section>
+										<div class="time">
+											Last updated rates at 2020-06-04 02:32:13 </div>
+										<div class="info">
+											Regulated by Bank Negara Malaysia. Rates are indicative and subject to
+											change. These may vary by bank or service used. </div>
+										<div class="button_wrap">
+											<a href="https://www.bfc.my/personal/international-money-transfer/#rates"
+												class="btn home_mt_rates_button">View Money Transfer Rates</a>
+										</div>
+
+									</div>
+
+									<div class="content_2" index="2" style="display:none">
+										<table cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr class="head">
+													<th> Currency </th>
+													<th> Buy </th>
+													<th> Sell </th>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon IDR"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/02/idr.svg"
+																alt="GBP to INDONESIAN RUPIAH Exchange Rate"></div>
+														<div class="currency_name">
+															<div class="title">IDR</div>
+															<span>Indonesian Rupiah</span>
+														</div>
+													</td>
+													<td> 3424.6575 </td>
+													<td> 3278.6885 </td>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon EUR"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/01/eur.svg"
+																alt="Pound Sterling to Euro Exchange Rate"></div>
+														<div class="currency_name">
+															<div class="title">EUR</div>
+															<span>Euro</span>
+														</div>
+													</td>
+													<td> 0.2273 </td>
+													<td> 0.2128 </td>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon USD"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/01/usd-80x48.png"
+																alt="Pound Sterling to US Dollar Exchange Rate"></div>
+														<div class="currency_name">
+															<div class="title">USD</div>
+															<span>US Dollar</span>
+														</div>
+													</td>
+													<td> 0.2392 </td>
+													<td> 0.2304 </td>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon AUD"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/02/aud.svg"
+																alt="Pound Sterling to Australian Dollar Exchange Rate">
+														</div>
+														<div class="currency_name">
+															<div class="title">AUD</div>
+															<span>Australian Dollar</span>
+														</div>
+													</td>
+													<td> 0.3704 </td>
+													<td> 0.3279 </td>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon GBP"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/01/gbp.svg"
+																alt="Pound Sterling to Pound Sterling Exchange Rate">
+														</div>
+														<div class="currency_name">
+															<div class="title">GBP</div>
+															<span>Pound Sterling</span>
+														</div>
+													</td>
+													<td> 0.1961 </td>
+													<td> 0.1812 </td>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon SGD"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/02/sgd.svg"
+																alt="Pound Sterling to Singapore Dollar Exchange Rate">
+														</div>
+														<div class="currency_name">
+															<div class="title">SGD</div>
+															<span>Singapore Dollar</span>
+														</div>
+													</td>
+													<td> 0.3367 </td>
+													<td> 0.3247 </td>
+												</tr>
+												<tr>
+													<td>
+														<div class="icon HKD"><span class="helper"></span><img
+																src="https://www.bfc.my/wp-content/uploads/2019/02/hkd.svg"
+																alt="Pound Sterling to Hong Kong Dollar Exchange Rate">
+														</div>
+														<div class="currency_name">
+															<div class="title">HKD</div>
+															<span>Hong Kong Dollar</span>
+														</div>
+													</td>
+													<td> 1.9608 </td>
+													<td> 1.8248 </td>
+												</tr>
+											</tbody>
+										</table>
+										<div class="time"> Last updated rates at 2020-06-04 02:32:13 </div>
+										<div class="info"> Regulated by Bank Negara Malaysia. Rates are indicative and
+											subject to change. These may vary by bank or service used. </div>
+										<div class="button_wrap">
+											<a href="https://www.bfc.my/personal/money-exchange/#rates"
+												class="btn home_tm_rates_button">View Currency Exchange Rates</a>
+										</div>
+									</div>
+
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Money Exchange / Money Transfer Cards-->
+		<div class="colorlib-services colorlib-bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 text-center animate-box">
+						<div class="wpb_wrapper" style="background-color: #004fa4;">
+							<div class=" info_block_with_icon clear globalBackground" style="color:#ffffff;">
+								<h2 style="color:#ffffff;">Money
+									<span>Transfer</span>
+								</h2>
+								<div class=" ico" style="width:20%;height:auto;">
+									<img src="images/money_transfer.svg" alt="Money Transfer Malaysia">
+								</div>
+								<div class=" content">
+									<strong>All your money transfer needs covered, with safe, smart and fast services
+										online or in branch.</strong>
+									<p></p>
+									<ul>
+										<li>Excellent rates</li>
+										<li>Multiple money transfer options</li>
+										<li>Send money in-branch, or online</li>
+										<li>7 branches</li>
+									</ul>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 text-center animate-box">
+						<div class="wpb_wrapper">
+							<div class=" info_block_with_icon clear globalBackground"
+								style="color:#ffffff;background:#c31887;">
+								<h2 style="color:#ffffff;">Money
+									<span>Exchange</span>
+								</h2>
+								<div class=" ico" style="width:20%;height:auto;">
+									<img src="images/currency-exchange.svg" alt="Currency Exchange Malaysia">
+								</div>
+								<div class=" content">
+									<strong>Great money exchange rates for any occasion!</strong>
+									<p></p>
+								</div>
+								<ul>
+									<li>Excellent rates on 20 currencies</li>
+									<li>0% commission</li>
+									<li>Rates are updated every 10 minutes</li>
+									<li>7 branches</li>
+								</ul>
+								<p></p>
+							</div>
+							<!-- <div class="services">
+							<span class="icon">
+								<i class="icon-download"></i>
+							</span>
+							<div class="desc">
+								<h3>Automatic Backup Data</h3>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							</div>
+						</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- North Block Intro-->
+			<div class="colorlib-intro">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+							<h2>North Block Central City</h2>
+							<p>North Block Central City (NBCC Exchange) is a leading Money Transfer and Money Exchange
+								company in Malaysia. Whether you’re sending money home to your loved ones or going on
+								holiday and need foreign currency, we have all your needs covered.</p>
+						</div>
+					</div>
+				<!-- <div class="row">
+						<div class="col-md-12 animate-box">
+							<span class="play"><a href="https://vimeo.com/channels/staffpicks/93951774" class="pulse popup-vimeo"><i class="icon-play3"></i></a></span>
+						</div>
+					</div> -->
+				</div>
+			</div>
+
+			<!-- CurrencyConverter/View Branch -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 text-center animate-box">
+						<div class="wpb_wrapper">
+							<div class=" small_info_icon" style="background-color:#f6e7f0;">
+								<div class=" clear">
+									<h4 style="color:#c31887;">View Branch Network</h4>
+									<div class=" ico" style="fill:#58585a;"><img src="images/branch-network.svg"
+											alt="Foreign Exchange Branches"></div>
+								</div>
+								<div>We’re just around the corner. With 7 branches to choose from, you won’t have to go
+									far for the best rates!</div><a class=" button_border button_red" href="#"
+									target="">Find Your Nearest Branch</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 text-center animate-box">
+						<div class="wpb_wrapper">
+							<div class=" small_info_icon" style="background-color:#eceded;">
+								<div class=" clear">
+									<h4 style="color:#58585a;">Currency Converter</h4>
+									<div class=" ico" style="fill:#58585a;">
+										<img src="images/currency-converter.svg" alt="Currency Converter">
+									</div>
+								</div>
+								<div>
+									Great rates! We offer excellent rates for money transfers, and foreign currency
+									exchange!
+								</div>
+								<a class=" button_border button_gray" href="#" target="" textcolor="rgb(88, 88, 90)"
+									bgcolor="rgba(0, 0, 0, 0)">Use Currency Converter</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Safe & Secure-->
+			<div class="color-lib-gurantee colorlib-bg-white">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center animate-box">
+							<div class="wpb_wrapper">
+								<div class=" vc_bfc_title">
+									<h2 style="color:#004fa4;text-align:center;">Safe &amp; Secure</h2>
+								</div>
+								<div class="wpb_text_column wpb_content_element  vc_bfc_text_block">
+									<div class="wpb_wrapper">
+										<p style="text-align: center;">BFC Exchange Malaysia Sdn Bhd is a regulated
+											licensed
+											Money Services Business Company in Malaysia, which means that we have to
+											follow
+											strict rules and regulations when handling your money.</p>
+
+									</div>
+								</div>
+								<div class="awards_list">
+									<div class="awards">
+										<div class=" award" style="margin-left:60px;margin-right:60px;">
+											<div><img src="https://www.bfc.my/wp-content/uploads/2018/12/norton.png"
+													alt="Fast and Secure Money Transactions"></div>
+											<div class=" img_title" style="    margin-top: 18px;
+												font-family:FSMe;font-size:18px;font-weight:bold;text-align:center;color:#0c4da2;">
+												Norton Secured</div>
+										</div>
+										<div class=" award" style="margin-left:60px;margin-right:60px;">
+											<div><img src="https://www.bfc.my/wp-content/uploads/2018/12/ssl.png"
+													alt="Send Money Online Safely"></div>
+											<div class=" img_title"
+												style="font-family:FSMe;font-size:18px;font-weight:bold;text-align:center;color:#0c4da2;">
+												100% Secure Transactions</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Join Our Community-->
+			<div class="color-lib-gurantee">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center animate-box">
+							<div class="wpb_wrapper">
+								<div class=" vc_bfc_title">
+									<h2 style="color:#004fa4;text-align:center;">Join Our Community</h2>
+								</div>
+								<div class="community"><a href="https://www.facebook.com/bfcexchangemalaysia/"
+										target="_blank" class="facebook"
+										style="background-image: url(https://www.bfc.my/wp-content/uploads/2019/05/facebook.svg)"></a><a
+										href="https://www.linkedin.com/company/bfc-exchange-malaysia-sdn-bhd-"
+										target="_blank" class="linkedin"
+										style="background-image: url(https://www.bfc.my/wp-content/uploads/2019/05/linkedin.svg)"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Contact information-->
+			<div class="colorlib-about" style="background-color: whitesmoke;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 text-center animate-box">
+							<div class="staff-entry">
+								<a href="#" class="staff-img" style="background-image: url(images/person1.jpg);"></a>
+								<div class="desc">
+									<h3>Nicholas</h3>
+									<span>Director | CEO</span>
+									<p>+6018-3162366</p>
+									<p>
+									</p>
+									<ul class="colorlib-social-icons">
+										<li><a href="#"><i class="icon-twitter"></i></a></li>
+										<li><a href="#"><i class="icon-facebook"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin"></i></a></li>
+										<li><a href="#"><i class="icon-dribbble"></i></a></li>
+									</ul>
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="staff-entry">
+								<a href="#" class="staff-img" style="background-image: url(images/person2.jpg);"></a>
+								<div class="desc">
+									<h3>Daren Chee</h3>
+									<span>Managing Director</span>
+									<p>+6018-2773180</p>
+
+									<p>
+									</p>
+									<ul class="colorlib-social-icons">
+										<li><a href="#"><i class="icon-twitter"></i></a></li>
+										<li><a href="#"><i class="icon-facebook"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin"></i></a></li>
+										<li><a href="#"><i class="icon-dribbble"></i></a></li>
+									</ul>
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="staff-entry">
+								<a href="#" class="staff-img" style="background-image: url(images/person3.jpg);"></a>
+								<div class="desc">
+									<h3>Kent</h3>
+									<span>Supervisor</span>
+									<p>+6018-2658820</p>
+									<p>
+									</p>
+									<ul class="colorlib-social-icons">
+										<li><a href="#"><i class="icon-twitter"></i></a></li>
+										<li><a href="#"><i class="icon-facebook"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin"></i></a></li>
+										<li><a href="#"><i class="icon-dribbble"></i></a></li>
+									</ul>
+									<p></p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="colorlib-work-featured colorlib-bg-white">
+				<div class="container">
+					<div class="row mobile-wrap">
+						<div class="col-md-5 animate-box">
+							<div class="mobile-img" style="background-image: url(images/mobile-2.jpg);"></div>
+						</div>
+						<div class="col-md-7 animate-box">
+							<div class="desc">
+								<h2>Real template creation</h2>
+								<div class="features">
+									<span class="icon"><i class="icon-lightbulb"></i></span>
+									<div class="f-desc">
+										<p>Even the all-powerful Pointing has no control about the blind texts it is an
+											almost unorthographic life One day however a small line of blind text by the
+											name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+									</div>
+								</div>
+								<div class="features">
+									<span class="icon"><i class="icon-circle-compass"></i></span>
+									<div class="f-desc">
+										<p>Even the all-powerful Pointing has no control about the blind texts it is an
+											almost unorthographic life One day however a small line of blind text by the
+											name</p>
+									</div>
+								</div>
+								<div class="features">
+									<span class="icon"><i class="icon-beaker"></i></span>
+									<div class="f-desc">
+										<p>Even the all-powerful Pointing has no control about the blind texts it is an
+											almost unorthographic life One day however a small line of blind text by the
+											name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+									</div>
+								</div>
+								<p><a href="#" class="btn btn-primary btn-outline with-arrow">Start collaborating <i
+											class="icon-arrow-right3"></i></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="row mobile-wrap">
+						<div class="col-md-5 col-md-push-7 animate-box">
+							<div class="mobile-img" style="background-image: url(images/mobile-1.jpg);"></div>
+						</div>
+						<div class="col-md-7 col-md-pull-5 animate-box">
+							<div class="desc">
+								<h2>Finish template creation</h2>
+								<div class="features">
+									<span class="icon"><i class="icon-lightbulb"></i></span>
+									<div class="f-desc">
+										<p>Even the all-powerful Pointing has no control about the blind texts it is an
+											almost unorthographic life One day however a small line of blind text by the
+											name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+									</div>
+								</div>
+								<div class="features">
+									<span class="icon"><i class="icon-circle-compass"></i></span>
+									<div class="f-desc">
+										<p>Even the all-powerful Pointing has no control about the blind texts it is an
+											almost unorthographic life One day however a small line of blind text by the
+											name</p>
+									</div>
+								</div>
+								<div class="features">
+									<span class="icon"><i class="icon-beaker"></i></span>
+									<div class="f-desc">
+										<p>Even the all-powerful Pointing has no control about the blind texts it is an
+											almost unorthographic life One day however a small line of blind text by the
+											name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+									</div>
+								</div>
+								<p><a href="#" class="btn btn-primary btn-outline with-arrow">Start collaborating <i
+											class="icon-arrow-right3"></i></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+ -->
+			<!-- <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_img_1.jpg);"
+				data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="col-md-4 col-sm-4 text-center animate-box">
+								<div class="counter-entry">
+									<span class="icon"><i class="flaticon-ribbon"></i></span>
+									<div class="desc">
+										<span class="colorlib-counter js-counter" data-from="0" data-to="1500"
+											data-speed="5000" data-refresh-interval="50"></span>
+										<span class="colorlib-counter-label">Of customers are satisfied with our
+											professional support</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 text-center animate-box">
+								<div class="counter-entry">
+									<span class="icon"><i class="flaticon-church"></i></span>
+									<div class="desc">
+										<span class="colorlib-counter js-counter" data-from="0" data-to="500"
+											data-speed="5000" data-refresh-interval="50"></span>
+										<span class="colorlib-counter-label">Amazing preset options to be mixed and
+											combined</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 text-center animate-box">
+								<div class="counter-entry">
+									<span class="icon"><i class="flaticon-dove"></i></span>
+									<div class="desc">
+										<span class="colorlib-counter js-counter" data-from="0" data-to="1200"
+											data-speed="5000" data-refresh-interval="50"></span>
+										<span class="colorlib-counter-label">Average response time on live chat support
+											channel</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<!-- <div class="colorlib-blog">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+							<h2>News from our Blog</h2>
+							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+								unorthographic life One day however a small line of blind text by the name of Lorem
+								Ipsum decided to leave for the far World of Grammar.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 animate-box">
+							<article>
+								<h2>Building the Mention Sales Application on Unapp</h2>
+								<p class="admin"><span>May 12, 2018</span></p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+									unorthographic life</p>
+								<p class="author-wrap"><a href="#" class="author-img"
+										style="background-image: url(images/person1.jpg);"></a> <a href="#"
+										class="author">by Dave Miller</a></p>
+							</article>
+						</div>
+						<div class="col-md-4 animate-box">
+							<article>
+								<h2>Building the Mention Sales Application on Unapp</h2>
+								<p class="admin"><span>May 12, 2018</span></p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+									unorthographic life</p>
+								<p class="author-wrap"><a href="#" class="author-img"
+										style="background-image: url(images/person2.jpg);"></a> <a href="#"
+										class="author">by Dave Miller</a></p>
+							</article>
+						</div>
+						<div class="col-md-4 animate-box">
+							<article>
+								<h2>Building the Mention Sales Application on Unapp</h2>
+								<p class="admin"><span>May 12, 2018</span></p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+									unorthographic life</p>
+								<p class="author-wrap"><a href="#" class="author-img"
+										style="background-image: url(images/person3.jpg);"></a> <a href="#"
+										class="author">by Dave Miller</a></p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="colorlib-subscribe" class="colorlib-subscribe"
+				style="background-image: url(images/cover_img_1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 text-center colorlib-heading animate-box">
+							<h2>Already trusted by over 10,000 users</h2>
+							<p>Subscribe to receive unapp tips from instructors right to your inbox.</p>
+						</div>
+					</div>
+					<div class="row animate-box">
+						<div class="col-md-6 col-md-offset-3">
+							<div class="row">
+								<div class="col-md-12">
+									<form class="form-inline qbstp-header-subscribe">
+										<div class="col-three-forth">
+											<div class="form-group">
+												<input type="text" class="form-control" id="email"
+													placeholder="Enter your email">
+											</div>
+										</div>
+										<div class="col-one-third">
+											<div class="form-group">
+												<button type="submit" class="btn btn-primary">Subscribe Now</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<!-- <div class="colorlib-pricing">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+							<h2>Pricing</h2>
+							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+								unorthographic life One day however a small line of blind text by the name</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 text-center animate-box">
+							<div class="pricing">
+								<h2 class="pricing-heading">Starter</h2>
+								<div class="price"><sup class="currency">$</sup>9<small>per month</small></div>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and
+									Consonantia, there live the blind texts.</p>
+								<p><a href="#" class="btn btn-primary">Select Plan</a></p>
+							</div>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<div class="pricing">
+								<h2 class="pricing-heading">Basic</h2>
+								<div class="price"><sup class="currency">$</sup>27<small>per month</small></div>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and
+									Consonantia, there live the blind texts.</p>
+								<p><a href="#" class="btn btn-primary">Select Plan</a></p>
+							</div>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<div class="pricing">
+								<h2 class="pricing-heading">Pro</h2>
+								<div class="price"><sup class="currency">$</sup>74<small>per month</small></div>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and
+									Consonantia, there live the blind texts.</p>
+								<p><a href="#" class="btn btn-primary">Select Plan</a></p>
+							</div>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<div class="pricing">
+								<h2 class="pricing-heading">Unlimited</h2>
+								<div class="price"><sup class="currency">$</sup>140<small>per month</small></div>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and
+									Consonantia, there live the blind texts.</p>
+								<p><a href="#" class="btn btn-primary">Select Plan</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<footer id="colorlib-footer">
+				<div class="container">
+					<div class="row row-pb-md">
+						<div class="col-md-3 colorlib-widget">
+							<h4>About unapp</h4>
+							<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated
+								they live in Bookmarksgrove right at the coast of the Semantics</p>
+							<p>
+								<ul class="colorlib-social-icons">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-facebook"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+									<li><a href="#"><i class="icon-dribbble"></i></a></li>
+								</ul>
+							</p>
+						</div>
+						<div class="col-md-3 colorlib-widget">
+							<h4>Information</h4>
+							<p>
+								<ul class="colorlib-footer-links">
+									<li><a href="#"><i class="icon-check"></i> Home</a></li>
+									<li><a href="#"><i class="icon-check"></i> Gallery</a></li>
+									<li><a href="#"><i class="icon-check"></i> About</a></li>
+									<li><a href="#"><i class="icon-check"></i> Blog</a></li>
+									<li><a href="#"><i class="icon-check"></i> Contact</a></li>
+									<li><a href="#"><i class="icon-check"></i> Privacy</a></li>
+								</ul>
+							</p>
+						</div>
+
+						<div class="col-md-3 colorlib-widget">
+							<h4>Recent Blog</h4>
+							<div class="f-blog">
+								<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
+								</a>
+								<div class="desc">
+									<h2><a href="blog.html">Photoshoot Technique</a></h2>
+									<p class="admin"><span>30 March 2018</span></p>
+								</div>
+							</div>
+							<div class="f-blog">
+								<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);">
+								</a>
+								<div class="desc">
+									<h2><a href="blog.html">Camera Lens Shoot</a></h2>
+									<p class="admin"><span>30 March 2018</span></p>
+								</div>
+							</div>
+							<div class="f-blog">
+								<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);">
+								</a>
+								<div class="desc">
+									<h2><a href="blog.html">Imahe the biggest photography studio</a></h2>
+									<p class="admin"><span>30 March 2018</span></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 colorlib-widget">
+							<h4>Contact Info</h4>
+							<ul class="colorlib-footer-links">
+								<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
+								<li><a href="tel://1234567920"><i class="icon-phone"></i> + 1235 2355 98</a></li>
+								<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i>
+										info@yoursite.com</a></li>
+								<li><a href="#"><i class="icon-location4"></i> yourwebsite.com</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="copy">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<p>
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+									Copyright &copy;<script>
+										document.write(new Date().getFullYear());
+									</script> North Block Central City Sdn. Bhd. All rights reserved.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 
 
 
-  <!-- Content section -->
-  <!-- <section class="py-5">
-    <div class="container">
-      <h1>Section Heading</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-    </div>
-  </section> -->
+		<div class="gototop js-top">
+			<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+		</div>
 
-  <!-- Footer -->
-  <footer  id="contact-us" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-12 col-sx-12">
-          <div class="footer-width">
-              <div class="footer-header">TRIDENT SMT EXCHANGE</div>
-              <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a class="smooth-goto" href="#about-us">About Us</a></li>
-                <li><a class="smooth-goto" href="#exchange-rate">Exchange Rate</a></li>
-                <li><a class="smooth-goto" href="#contact-us">Contact Us</a></li>
-              </ul>
-          </div>
-        </div> 
-        <div class="col-lg-2 col-md-2">
-          <p></p>
-        </div>
-          
-        <div class="col-lg-5 col-md-5 col-sm-12 col-sx-12">
-            <div class="footer-width">
-               <div class="footer-header">ADDRESS</div>
-               <ul class="address-section">
-                  <li>
-                    <div class="address-section-icon"> <i class="fa fa-map-marker fa-3x"></i></div>
-                    <div class="address-section-right">  
-                      Elit Avenue, 10 1-2-43, <br>
-                      Jalan Mayang Pasir 2, <br>
-                      Bandar Baru 11950, <br>
-                      Bayan Lepas Pulau Pinang,<br>
-                      Malaysia.
-                    </div>
-                  </li>
-                  <li><span class="address-section-icon"><i class="fa fa-envelope fa-2x"></i></span><div class="address-section-right">tridentsmtexchange@gmail.com</div></li>
-                  <li><span class="address-section-icon"><i class="fa fa-phone fa-2x"></i></span><div class="address-section-right">+6011-23143820</div></li>
-               </ul>
-            
-           
-         </div>
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Stellar Parallax -->
+		<script src="js/jquery.stellar.min.js"></script>
+		<!-- YTPlayer -->
+		<script src="js/jquery.mb.YTPlayer.min.js"></script>
+		<!-- Owl carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Magnific Popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/magnific-popup-options.js"></script>
+		<!-- Counters -->
+		<script src="js/jquery.countTo.js"></script>
+		<!-- Main -->
+		<script src="js/main.js"></script>
 
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <hr style="width:100%;">
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <p>Trident SMT Exchange was incepted in 2000 and is licensed under the Money Services Business Act 2011 (money services business license bearing no. 01403) to offer and provide money changing services in Malaysia. Given that our products are generally volatile in nature and may be adversely affected by political, economic, policy, social, regulatory and other developments in Malaysia and other countries, you are exposed to currency risk which may consequently lead to unanticipated gains or losses. In this respect, you are encouraged to conduct your own evaluation or seek professional advice to assess and understand the level of risk before purchasing our products.
-          </p>
-            <p>This website is owned and operated by Trident SMT Exchange and is aimed at providing visitors and registered users with information of the latest foreign currency rates, including the historical and comparison exchange rates charts. Our website uses cookies to enhance your experience while you surf our website. By continuing to browse our website, you agree to our use of cookies. Kindly refer to our terms of use and personal data notice for further information on the usage of our website and our manner and purposes of collection of your personal data.</p>
-            <p>We are required under the Anti-Money Laundering and Counter Financing of Terrorism (AML/CFT) Sector 3 for Money Services Business to conduct customer due diligence on our customers and persons when we provide money changing and wholesale currency services involving an amount equivalent to RM 3,000.00 and above or if we have any doubt or suspicion on the information provided by our customers or the transaction, regardless of the amount transacted. In this respect, we reserve the right to request for your personal information and supporting identification documents before accepting and performing a transaction.
-
-              Should you require further information or clarification on our products and services, please contact us via the e-chatroom or e-form on our website</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Trident SMT Exchange All rights reserved.</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
-
-  <script type="text/javascript">
-    (function($) {
-      $(function() { //on DOM ready 
-            $("#scroller").simplyScroll();
-      });
-     })(jQuery);
-
-     $('.smooth-goto').on('click', function() {  
-    $('html, body').animate({scrollTop: $(this.hash).offset().top - 75}, 1000);
-    return false;
-});
-
-    </script>
 </body>
 
 </html>

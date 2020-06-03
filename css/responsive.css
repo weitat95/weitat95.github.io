@@ -1,0 +1,61 @@
+/* For Mobile */
+@media screen and (max-width: 540px) {
+    .info_block_with_icon h2{
+      font-size: 30px;
+    }
+    .info_block_with_icon strong{
+      font-size: 13px;
+    }
+    .info_block_with_icon li{
+      font-size: 13px!important; 
+    }
+    .colorlib-services >div {
+        padding-left:0px;
+        padding-right:0px;
+    }
+
+    .small_info_icon h4{
+        font-size:40px;
+    }
+    .small_info_icon div{
+        font-size:13px;
+    }
+    .small_info_icon a{
+        position: initial !important; 
+    }
+    .small_info_icon{
+        padding-bottom:40px;
+    }
+    .awards_list .awards {
+        margin-top: 50px;
+    }
+    .awards_list {
+        padding: 0 10px;
+    }
+    .awards_list .awards .award {
+        height: 75px;
+        margin-left:0px!important;
+        margin-right:0px!important;
+    }
+    .awards_list .awards .award .img_title {
+        font-size: 14px !important;
+        width: auto;
+        
+    }
+  }
+  
+  /* For Tablets */
+  @media screen and (min-width: 540px) and (max-width: 780px) {
+    /* .info_block_with_icon {
+      
+    } */
+  }
+  
+  @media screen and (min-width: 780px) and (max-width: 1320px) {
+    .info_block_with_icon strong{
+      font-size: 15px;
+    }
+    .info_block_with_icon li{
+      font-size: 15px!important; 
+    }
+  }
