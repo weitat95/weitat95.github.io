@@ -29,7 +29,9 @@
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.css"> 
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+	
 
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
@@ -66,18 +68,18 @@
 						<div class="col-md-10 text-right menu-1">
 							<ul>
 								<li class="active"><a href="index.html">Home</a></li>
-								<li class="has-dropdown">
+								<!-- <li class="has-dropdown">
 									<a href="#">Works</a>
-									<!-- <ul class="dropdown">
+									<ul class="dropdown">
 										<li><a href="work-grid.html">Works grid with text</a></li>
 										<li><a href="work-grid-without-text.html">Works grid w/o text</a></li>
-									</ul> -->
-								</li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Shop</a></li>
-								<li><a href="#">Contact</a></li>
+									</ul>
+								</li> -->
+								<!-- <li><a href="#">Services</a></li> -->
+								<li><a class="smooth-goto" offset=-100 href="#exchangesec">Exchange Rate</a></li>
+								<li><a class="smooth-goto" offset=50 href="#about">About</a></li>
+								<!-- <li><a href="#">Shop</a></li> -->
+								<li><a class="smooth-goto" offset=0 href="#contact">Contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -179,20 +181,51 @@
 			</div>
 		</div> -->
 		<!-- Money Exchange Table-->
-		<section>
+		<section id="exchangesec" style="margin-top:100px;margin-bottom:40px;">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
+				<div class="row clear-flex" style="display:flex;align-items: center;">
+
+					<div class="col-lg-6  animate-box">
+						<div class="desc">
+							<h2>Finish template creation</h2>
+							<div class="features">
+								<span class="icon"><i class="icon-lightbulb"></i></span>
+								<div class="f-desc">
+									<p>Even the all-powerful Pointing has no control about the blind texts it is an
+										almost unorthographic life One day however a small line of blind text by the
+										name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+								</div>
+							</div>
+							<div class="features">
+								<span class="icon"><i class="icon-circle-compass"></i></span>
+								<div class="f-desc">
+									<p>Even the all-powerful Pointing has no control about the blind texts it is an
+										almost unorthographic life One day however a small line of blind text by the
+										name</p>
+								</div>
+							</div>
+							<div class="features">
+								<span class="icon"><i class="icon-beaker"></i></span>
+								<div class="f-desc">
+									<p>Even the all-powerful Pointing has no control about the blind texts it is an
+										almost unorthographic life One day however a small line of blind text by the
+										name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+								</div>
+							</div>
+							<p><a href="#" class="btn btn-primary btn-outline with-arrow">Start collaborating <i
+										class="icon-arrow-right3"></i></a></p>
+						</div>
+					</div>	
+
+					<div class="col-lg-6 animate-box">
 						<div class="wpb_wrapper">
 							<div id="bfc_block_main" class="bfc_block">
-
-
-								<div class="tabs">
-									<div class="active" index="1">Money Transfer</div>
-									<div class="" index="2">Money Exchange</div>
+								<div class="tabs" style="display:flex;">
+									<div class="active" index="1" id="transfer">Money Transfer</div>
+									<div class="" index="2" id="exchange">Money Exchange</div>
 								</div>
 								<div class="tab_content cur_content">
-									<div class="content_1 active" index="1">
+									<div class="content_1 active" index="1" style="display:none;" >
 										<table cellspacing="0" cellpadding="0">
 											<tbody>
 												<tr class="head">
@@ -300,15 +333,14 @@
 											</tbody>
 										</table>
 
-										<div class="time">
-											Last updated rates at 2020-06-04 02:32:13 </div>
+										<!-- <div class="time">Last updated rates at 2020-06-04 02:32:13 </div> -->
 										<div class="info">
-											Regulated by Bank Negara Malaysia. Rates are indicative and subject to
+											Regulated by NBCC. Rates are indicative and subject to
 											change. These may vary by bank or service used. </div>
-										<div class="button_wrap">
+										<!-- <div class="button_wrap">
 											<a href="https://www.bfc.my/personal/international-money-transfer/#rates"
 												class="btn home_mt_rates_button">View Money Transfer Rates</a>
-										</div>
+										</div> -->
 
 									</div>
 
@@ -417,13 +449,13 @@
 												</tr>
 											</tbody>
 										</table>
-										<div class="time"> Last updated rates at 2020-06-04 02:32:13 </div>
+										<!-- <div class="time"> Last updated rates at 2020-06-04 02:32:13 </div> -->
 										<div class="info"> Regulated by Bank Negara Malaysia. Rates are indicative and
 											subject to change. These may vary by bank or service used. </div>
-										<div class="button_wrap">
+										<!-- <div class="button_wrap">
 											<a href="https://www.bfc.my/personal/money-exchange/#rates"
 												class="btn home_tm_rates_button">View Currency Exchange Rates</a>
-										</div>
+										</div> -->
 									</div>
 
 								</div>
@@ -432,11 +464,14 @@
 							</div>
 						</div>
 					</div>
+
+
+					
 				</div>
 			</div>
 		</section>
 		<!-- Money Exchange / Money Transfer Cards-->
-		<div class="colorlib-services colorlib-bg-white">
+		<div class="colorlib-services colorlib-bg-white" id="about" style="padding-bottom:0">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 text-center animate-box">
@@ -456,7 +491,7 @@
 										<li>Excellent rates</li>
 										<li>Multiple money transfer options</li>
 										<li>Send money in-branch, or online</li>
-										<li>7 branches</li>
+										<li>All branches</li>
 									</ul>
 									<p></p>
 								</div>
@@ -481,7 +516,7 @@
 									<li>Excellent rates on 20 currencies</li>
 									<li>0% commission</li>
 									<li>Rates are updated every 10 minutes</li>
-									<li>7 branches</li>
+									<li>All branches</li>
 								</ul>
 								<p></p>
 							</div>
@@ -500,10 +535,10 @@
 			</div>
 
 			<!-- North Block Intro-->
-			<div class="colorlib-intro">
+			<div class="colorlib-intro" style="padding:2em 0;">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+					<div class="row" >
+						<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box" style="margin-bottom:0px;">
 							<h2>North Block Central City</h2>
 							<p>North Block Central City (NBCC Exchange) is a leading Money Transfer and Money Exchange
 								company in Malaysia. Whether you’re sending money home to your loved ones or going on
@@ -529,9 +564,9 @@
 									<div class=" ico" style="fill:#58585a;"><img src="images/branch-network.svg"
 											alt="Foreign Exchange Branches"></div>
 								</div>
-								<div>We’re just around the corner. With 7 branches to choose from, you won’t have to go
-									far for the best rates!</div><a class=" button_border button_red" href="#"
-									target="">Find Your Nearest Branch</a>
+								<div>We’re just around the corner. With few branches to choose from, you won’t have to go
+									far for the best rates!</div>
+									<!-- <a class=" button_border button_red" href="#" target="">Find Your Nearest Branch</a> -->
 							</div>
 						</div>
 					</div>
@@ -548,20 +583,48 @@
 									Great rates! We offer excellent rates for money transfers, and foreign currency
 									exchange!
 								</div>
-								<a class=" button_border button_gray" href="#" target="" textcolor="rgb(88, 88, 90)"
-									bgcolor="rgba(0, 0, 0, 0)">Use Currency Converter</a>
+								<!-- <a class=" button_border button_gray" href="#" target="" textcolor="rgb(88, 88, 90)" bgcolor="rgba(0, 0, 0, 0)">Use Currency Converter</a> -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+						<!-- Customer Reviews-->
+
+
+						<section style="background-color: #004fa4; padding:20px 0px;" id="contact">
+							<div class="container">
+								<div class="row">
+									<p class="review-title" style="text-align: center; color:#fff;font-weight:bold;font-size:30px;">What Clients Are Saying</p>
+								</div>
+								<div class="row" >
+									<div class="owl-carousel owl-theme owl-loaded owl-drag" id="review-wrapper">
+										
+										<div class="item" id="review-block">
+											<blockquote style="display:flex; flex-direction: column; justify-content: space-between;">
+												<i class="icon-quotes-left"></i>
+												<p style="margin:10px 0;" id="review-message">Always my first choice.</p>
+												<i class="icon-quotes-right"></i>
+												<p><cite>— <span id="review-author">Carl Spencer</span>, <span id="review-time">3 Years Ago</span></cite></p>
+											</blockquote>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+			
 			<!-- Contact information-->
 			<div class="colorlib-about" style="background-color: whitesmoke;">
 				<div class="container">
 					<div class="row">
+						<div class="col-md-12 text-center animate-box">
+							<strong style="font-size: 40px;">Contact Us</strong>
+						</div>
+					</div>
+					<div class="row">
 						<div class="col-md-4 text-center animate-box">
 							<div class="staff-entry">
-								<a href="#" class="staff-img" style="background-image: url(images/person1.jpg);"></a>
+								<!-- <a href="#" class="staff-img" style="background-image: url(images/person1.jpg);"></a> -->
 								<div class="desc">
 									<h3>Nicholas</h3>
 									<span>Director | CEO</span>
@@ -580,7 +643,7 @@
 						</div>
 						<div class="col-md-4 text-center animate-box">
 							<div class="staff-entry">
-								<a href="#" class="staff-img" style="background-image: url(images/person2.jpg);"></a>
+								<!-- <a href="#" class="staff-img" style="background-image: url(images/person2.jpg);"></a> -->
 								<div class="desc">
 									<h3>Daren Chee</h3>
 									<span>Managing Director</span>
@@ -600,7 +663,7 @@
 						</div>
 						<div class="col-md-4 text-center animate-box">
 							<div class="staff-entry">
-								<a href="#" class="staff-img" style="background-image: url(images/person3.jpg);"></a>
+								<!-- <a href="#" class="staff-img" style="background-image: url(images/person3.jpg);"></a> -->
 								<div class="desc">
 									<h3>Kent</h3>
 									<span>Supervisor</span>
@@ -672,11 +735,11 @@
 								<div class=" vc_bfc_title">
 									<h2 style="color:#004fa4;text-align:center;">Join Our Community</h2>
 								</div>
-								<div class="community"><a href="https://www.facebook.com/bfcexchangemalaysia/"
-										target="_blank" class="facebook"
+								<div class="community"><a href="#"
+										 class="facebook"
 										style="background-image: url(https://www.bfc.my/wp-content/uploads/2019/05/facebook.svg)"></a><a
-										href="https://www.linkedin.com/company/bfc-exchange-malaysia-sdn-bhd-"
-										target="_blank" class="linkedin"
+										href="#"
+										 class="linkedin"
 										style="background-image: url(https://www.bfc.my/wp-content/uploads/2019/05/linkedin.svg)"></a>
 								</div>
 							</div>
@@ -761,8 +824,8 @@
 						</div>
 					</div>
 				</div>
-			</div>
- -->
+			</div> -->
+
 			<!-- <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_img_1.jpg);"
 				data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
@@ -938,14 +1001,16 @@
 					</div>
 				</div>
 			</div> -->
+			
 
-			<footer id="colorlib-footer">
-				<div class="container">
-					<div class="row row-pb-md">
-						<div class="col-md-3 colorlib-widget">
-							<h4>About unapp</h4>
-							<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated
-								they live in Bookmarksgrove right at the coast of the Semantics</p>
+
+			
+			<footer id="colorlib-footer" style="padding-top:1em; padding-bottom:0;">
+				<div class="container" >
+					<div class="row row-pb-md clear-flex" style="display:flex; justify-content:space-around; padding:1em!important;">
+						<div class="col-md-4 colorlib-widget col-xs-12	">
+							<h4>About North Block Central City</h4>
+							<p>North Block Central City Exchange is a leading Money Transfer and Money Exchange company in Malaysia. Whether you’re sending money home to your loved ones or going on holiday and need foreign currency, we have all your needs covered.</p>
 							<p>
 								<ul class="colorlib-social-icons">
 									<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -955,7 +1020,7 @@
 								</ul>
 							</p>
 						</div>
-						<div class="col-md-3 colorlib-widget">
+						<!-- <div class="col-md-3 colorlib-widget">
 							<h4>Information</h4>
 							<p>
 								<ul class="colorlib-footer-links">
@@ -967,9 +1032,9 @@
 									<li><a href="#"><i class="icon-check"></i> Privacy</a></li>
 								</ul>
 							</p>
-						</div>
+						</div> -->
 
-						<div class="col-md-3 colorlib-widget">
+						<!-- <div class="col-md-3 colorlib-widget">
 							<h4>Recent Blog</h4>
 							<div class="f-blog">
 								<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
@@ -995,15 +1060,15 @@
 									<p class="admin"><span>30 March 2018</span></p>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
-						<div class="col-md-3 colorlib-widget">
+						<div class="col-md-3 colorlib-widget  col-xs-12">
 							<h4>Contact Info</h4>
 							<ul class="colorlib-footer-links">
 								<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
-								<li><a href="tel://1234567920"><i class="icon-phone"></i> + 1235 2355 98</a></li>
-								<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i>
-										info@yoursite.com</a></li>
+								<li><a href="tel://1234567920"><i class="icon-phone"></i> +6018-2658820								</a></li>
+								<li><a href="mailto:northblockcentralcity@gmail.com"><i class="icon-envelope"></i>
+										northblockcentralcity@gmail.com</a></li>
 								<li><a href="#"><i class="icon-location4"></i> yourwebsite.com</a></li>
 							</ul>
 						</div>
@@ -1027,7 +1092,12 @@
 		</div>
 
 
+			
+				
 
+		<div class="feedback js-top">
+			<a href="#contact" class="smooth-goto" offset=0><i class="icon-users"></i></a>
+		</div>
 		<div class="gototop js-top">
 			<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
 		</div>
@@ -1038,6 +1108,8 @@
 		<script src="js/jquery.easing.1.3.js"></script>
 		<!-- Bootstrap -->
 		<script src="js/bootstrap.min.js"></script>
+		<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+
 		<!-- Waypoints -->
 		<script src="js/jquery.waypoints.min.js"></script>
 		<!-- Stellar Parallax -->

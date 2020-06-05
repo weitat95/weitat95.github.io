@@ -42,6 +42,45 @@
         width: auto;
         
     }
+
+    .clear-flex {
+        display:block !important;
+    }
+    .bfc_block .tabs>div {
+        font-size: 13px;
+        padding: 7px 4px;
+    }
+    .bfc_block .cur_content th:first-child {
+        padding-left: 9px;
+        width:auto !important;
+    }
+    .bfc_block .cur_content th {
+        font-size: 11px;
+        padding: 10px 0;
+    }
+    .bfc_block .cur_content td {
+        font-size: 12px;
+        padding: 8px 0 7px;
+    }
+    .bfc_block .cur_content td .icon {
+        width: 33px;
+        height: 20px;
+    }
+    .bfc_block .cur_content td .currency_name {
+        height: 20px;
+        padding-left: 5px;
+    }
+    .bfc_block .cur_content td .title {
+        line-height: 12px;
+        height: auto;
+    }
+    .bfc_block .cur_content td span {
+        font-size: 9px;
+        margin-top: -1px;
+    }
+    .review-title{
+        font-size:20px!important;
+    }
   }
   
   /* For Tablets */
@@ -49,11 +88,17 @@
     /* .info_block_with_icon {
       
     } */
+    .clear-flex {
+        display:block !important;
+    }
   }
   
   @media screen and (min-width: 780px) and (max-width: 1320px) {
     .info_block_with_icon strong{
       font-size: 15px;
+    }
+    .clear-flex {
+        display:block !important;
     }
     .info_block_with_icon li{
       font-size: 15px!important; 

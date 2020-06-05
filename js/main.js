@@ -232,23 +232,47 @@
 	// Owl Carousel
 	var owlCrouselFeatureSlide = function() {
 		var owl = $('.owl-carousel');
+		// var owl = $('.owl-carousel');
 		owl.owlCarousel({
 			animateOut: 'fadeOut',
-		   animateIn: 'fadeIn',
-			autoplay: true,
-			items: 1,
-		   loop: true,
-		   margin: 0,
-		   responsiveClass: true,
-		   nav: false,
-		   dots: true,
-		   autoplayHoverPause: true,
-		   smartSpeed: 500,
-		   navText: [
-		      "<i class='icon-arrow-left3 owl-direction'></i>",
-		      "<i class='icon-arrow-right3 owl-direction'></i>"
-	     	]
+			animateIn: 'fadeIn',
+			items:2,
+			loop:true,
+			margin:10,
+			autoplay:true,
+			autoplayTimeout:2000,
+			autoplayHoverPause:true,
+			responsiveClass:true,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:1
+				},
+				1000:{
+					items:4
+				}
+			}
 		});
+
+		// owl.owlCarousel({
+		// 	animateOut: 'fadeOut',
+		//    animateIn: 'fadeIn',
+		// 	autoplay: true,
+		// 	items: 1,
+		//    loop: true,
+		//    margin: 0,
+		//    responsiveClass: true,
+		//    nav: false,
+		//    dots: true,
+		//    autoplayHoverPause: true,
+		//    smartSpeed: 500,
+		//    navText: [
+		//       "<i class='icon-arrow-left3 owl-direction'></i>",
+		//       "<i class='icon-arrow-right3 owl-direction'></i>"
+	    //  	]
+		// });
 
 	};
 
@@ -256,6 +280,79 @@
 		$('.player').mb_YTPlayer();
 	};
 
+	var clickListener = function(){
+		$('#transfer').click(function(){
+			$('#transfer').addClass("active");
+			$('#exchange').removeClass("active");
+			$('.content_1').addClass("active");
+			$('.content_2').removeClass("active");
+		});
+		$('#exchange').click(function(){
+			$('#exchange').addClass("active");
+			$('#transfer').removeClass("active");
+			$('.content_2').addClass("active");
+			$('.content_1').removeClass("active");
+		});
+	};
+
+	var smoothGoTo = function(){
+		$('.smooth-goto').on('click', function() {  
+			$('html, body').animate({scrollTop: $(this.hash).offset().top +parseInt($(this).attr('offset'))}, 500);
+			return false;
+		});
+		$('.smooth-goto2').on('')
+	}
+	var reviewFill = function(){
+		var customer_reviews = [
+			{'name': 'Hayden Z',
+			 'days': '4 years ago',
+			 'like':'55','dislike':'1',
+			 'text':'Very easy to use'},
+	
+			 {'name': 'Jocelin O',
+			 'days': '3 years ago',
+			 'like':'110','dislike':'2',
+			 'text':"I was amazed at the service of CC Exchange. It's all good This is simply unbelievable!"},
+	
+			 {'name': 'Dove A',
+			 'days': '3 years ago',
+			 'like':'53','dislike':'10',
+			 'text':"Needless to say we are extremely satisfied with the results. Thanks CC Exchange! Just what I was looking for."},
+	
+			 {'name': 'John Lee',
+			 'days': '2 years ago',
+			 'like':'41','dislike':'6',
+			 'text':'I love NorthBlock Exchange. Recommended.'},
+	
+			 {'name': 'Mona J',
+			 'days': '2 years ago',
+			 'like':'77','dislike':'2',
+			 'text':'I would like to personally thank you for your outstanding service. Thank you so much for your help.'},
+	
+			 {'name': 'Stephanie Tan',
+			 'days': '2 years ago',
+			 'like':'12','dislike':'1',
+			 'text':'Thanks North Block for making my life easier.'},
+	
+			 {'name': 'Laurence',
+			 'days': '1 years ago',
+			 'like':'5','dislike':'0',
+			 'text':'Would recommend North Block to my friends.'},
+	
+			 {'name': 'Yap KC',
+			 'days': '3 months ago',
+			 'like':'10','dislike':'1',
+			 'text':'Highly Recommended!!'}
+		];
+
+		$.each(customer_reviews, function(i, item) {
+			var example = $('#review-block').clone();
+			example.find('#review-author').text(item.name);
+			example.find('#review-time').text(item.days);
+			example.find('#review-message').text(item.text);
+			$('#review-wrapper').append(example);
+		});
+	}
 	
 	$(function(){
 		mobileMenuOutsideClick();
@@ -268,8 +365,11 @@
 		parallax();
 		counter();
 		counterWayPoint();
+		reviewFill();
 		owlCrouselFeatureSlide();
 		bgVideo();
+		clickListener();
+		smoothGoTo();
 	});
 
 
