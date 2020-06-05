@@ -353,6 +353,91 @@
 			$('#review-wrapper').append(example);
 		});
 	}
+
+	var tableFill = function(){
+		var currency_table = [
+			{'name': 'Singapore Dollar',
+			 'abbv': 'SGD',
+			 'credit': '0.3310',
+			 'cash':'0.3310',
+			 'buy':'3.0603',
+			 'sell':'3.0657',
+			 'link':'https://www.countryflags.io/sg/flat/64.png'},
+
+			 {'name': 'United Arab Emirates Dirham',
+			 'abbv': 'AED',
+			 'credit': '0.8600',
+			 'cash':'0.8600',
+			 'buy' :'116.1417',
+			 'sell': '116.3114',
+			 'link':'https://www.countryflags.io/ae/flat/64.png'},
+			 {'name': 'Chinese Yuan',
+			 'abbv': 'CNY',
+			 'credit': '1.6610',
+			 'cash':'1.6610',
+			 'buy': '0.6013',
+			 'sell':'0.6025',
+			 'link':'https://www.countryflags.io/cn/flat/64.png'},
+			 {'name': 'United States Dollar',
+			 'abbv': 'USD',
+			 'credit': '0.2333',
+			 'cash':'0.2333',
+			 'buy': '4.42660',
+			 'sell': '4.2720',
+			 'link':'https://www.countryflags.io/us/flat/64.png'},
+			 {'name': 'Malaysian Ringgit',
+			 'abbv': 'MYR',
+			 'credit': '1.0000',
+			 'cash':'1.0000',
+			 'buy': '1.0000',
+			 'sell': '1.0000',
+			 'link':'https://www.countryflags.io/my/flat/64.png'},
+			 {'name': 'Vietnamese dong',
+			 'abbv': 'VND',
+			 'cash': '5,450.8300',
+			 'credit': '5,450.8300',
+			 'buy':'0.0183',
+			 'sell':'0.0184',
+			 'link': 'https://www.countryflags.io/vn/flat/64.png'},
+			 {'name': 'Myanmar Kyat',
+			 'abbv': 'MMK',
+			 'cash': '328.5510',
+			 'credit': '328.5510',
+			 'buy':'0.3049',
+			 'sell':'0.3054',
+			 'link': 'https://www.countryflags.io/mm/flat/64.png'},
+			 {'name': 'New Taiwan Dollar',
+			 'abbv': 'TWD',
+			 'cash': '6.9700',
+			 'credit': '6.9700',
+			 'link': 'https://www.countryflags.io/tw/flat/64.png',
+			 'buy':'14.3126',
+			 'sell': '14.3471'},
+			 
+
+		]
+		$.each(currency_table, function(i, item){
+			var example = $('#curr-table-wrapper1').clone();
+
+			example.find('#abbv-name').text(item.abbv);
+			example.find('#full-name').text(item.name);
+			example.find('#credit-acc').text(item.credit);
+			example.find('#cash-pick').text(item.cash);
+			example.find('#url').attr('src',item.link);
+			$('#table1').append(example);
+
+			example = $('#curr-table-wrapper2').clone();
+			example.find('#abbv-name').text(item.abbv);
+			example.find('#full-name').text(item.name);
+			example.find('#buy').text(item.buy);
+			example.find('#sell').text(item.sell);
+			example.find('#url').attr('src',item.link);
+			$('#table2').append(example);
+
+		});
+		$('#curr-table-wrapper1').remove();
+		$('#curr-table-wrapper2').remove();
+	}
 	
 	$(function(){
 		mobileMenuOutsideClick();
@@ -365,6 +450,7 @@
 		parallax();
 		counter();
 		counterWayPoint();
+		tableFill();
 		reviewFill();
 		owlCrouselFeatureSlide();
 		bgVideo();
