@@ -21,7 +21,24 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+    .alert-box{
+        margin-left:2rem;
+        right:initial;
+    }
+    .information-contact{
+        margin-top:40px;
+    }
 
+    .footer-icons{
+        display:none;
+    }
+
+    .warehouse-text{
+        margin-top:5rem;
+    }
+    .logo img{
+        height:70px;
+    }
  
 }
  

@@ -5982,9 +5982,9 @@ p.pera-top-gray{
     font-size: 14px
 }
 
-.form-contact .form-group {
+/* .form-contact .form-group {
     margin-bottom: 30px
-}
+} */
 
 .form-contact .form-control {
     border: 1px solid #e5e6e9;
@@ -7517,3 +7517,87 @@ del {
 .zero-padding div{
     padding:1px;
 }
+
+.alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: white;
+    border: 1px solid #c80000;
+    border-radius: 13px;
+    padding: 4px 25px 4px 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 15px;
+    pointer-events: none;
+  
+    font-family: Montserrat-Medium;
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+  
+    visibility: hidden;
+    opacity: 0;
+  
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+  }
+  
+  .alert-validate::after {
+    content: "\f06a";
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    color: #c80000;
+    font-size: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 20px;
+  }
+  
+  .alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  @media (max-width: 992px) {
+    .alert-validate::before {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .mg-btm{
+      margin-bottom:20px;
+  }
+
+  .alert-wrapper{
+    width:100%; height:100%; position:fixed; bottom:0px;z-index: 9999999; background-color: rgb(0,0,0,0.75);
+  }
+  
+  .alert-box{
+    position:absolute;height:175px;background-color: #fff;bottom:45%;right:40%;
+    border-radius:5px;
+  }
+  .alertButton{
+    position:absolute;right:90px;
+  }
+
+  .alert-dismissible{
+      padding-left:4rem;
+  }
+
+  .logo img{
+      height:100px;
+  }

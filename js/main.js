@@ -265,3 +265,97 @@
 
 
 })(jQuery);
+
+(function ($) {
+  "use strict";
+  
+  /*==================================================================
+  [ Validate ]*/
+  var name = $('.validate-input input[name="name"]');
+  var email = $('.validate-input input[name="email"]');
+  var subject = $('.validate-input input[name="subject"]');
+  var message = $('.validate-input textarea[name="message"]');
+
+  
+  $('.validate-form').on('submit',function(e){
+
+      e.preventDefault();
+      var check = true;
+
+      if($(name).val().trim() == ''){
+          showValidate(name);
+          check=false;
+      }else{
+        hideValidate(name);
+      }
+
+      if($(subject).val().trim() == ''){
+          showValidate(subject);
+          check=false;
+      }else{
+        hideValidate(subject);
+      }
+
+
+      if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+          showValidate(email);
+          check=false;
+      }else{
+        hideValidate(email);
+      }
+
+      if($(message).val().trim() == ''){
+          showValidate(message);
+          check=false;
+      }else{
+        hideValidate(message);
+      }
+      
+      if (check) {
+          var xhttp = new XMLHttpRequest();
+          
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              // document.getElementById("demo").innerHTML = this.responseText;
+              $('#review-alert').show();
+            }
+          };
+          var data = {name: $(name).val(), subject: $(subject).val(), email: $(email).val(), message: $(message).val()};
+          xhttp.open("POST", "https://email-app-testtest.herokuapp.com/", true);
+          // xhttp.open("POST", "http://localhost:9997", true);
+          xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");    
+          
+          xhttp.send(JSON.stringify(data));
+      }
+      return false;
+  });
+
+  $('.alertHandler').on('click', function(){
+    $('#review-alert').hide();
+    name.val('');
+    email.val('');
+    subject.val('');
+    message.val('');
+  });
+
+  $('.validate-form .input1').each(function(){
+      $(this).focus(function(){
+         hideValidate(this);
+     });
+  });
+
+  function showValidate(input) {
+      var thisAlert = $(input).parent();
+
+      $(thisAlert).addClass('alert-validate');
+  }
+
+  function hideValidate(input) {
+      var thisAlert = $(input).parent();
+
+      $(thisAlert).removeClass('alert-validate');
+  }
+  
+  
+
+})(jQuery);

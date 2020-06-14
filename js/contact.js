@@ -9,8 +9,8 @@ $(document).ready(function(){
     }, "type the correct answer -_-");
 
     // validate contactForm form
-    $(function(event) {
-        event.preventDefault(); 
+    $(function() {
+        // event.preventDefault(); 
 
         $('#contactForm').validate({
             rules: {
@@ -63,7 +63,7 @@ $(document).ready(function(){
                 xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     // document.getElementById("demo").innerHTML = this.responseText;
-                    alert('post success!');
+                    $('#review-alert').show();
                 }
                 };
                 // var data = {name: $(name).val(), subject: $(subject).val(), email: $(email).val(), message: $(message).val()};
