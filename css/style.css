@@ -2895,7 +2895,7 @@ hero-btn {
 }
 
 .slider-height2 {
-    height: 450px;
+    height: 350px;
     background-size: cover
 }
 
@@ -2918,9 +2918,12 @@ hero-btn {
 }
 
 .slider-area2 {
-    background-image: url(../img/hero/hero2.png);
-    background-repeat: no-repeat;
-    background-size: cover
+    background-image: url(../myimg/warehouse-with-concrete-floors-4483610.png);
+    
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
 }
 
 .slider-area {
@@ -3067,7 +3070,7 @@ hero-btn {
 }
 
 .slider-area2 .hero-cap h2 {
-    color: #212025;
+    color: #fff;
     font-size: 50px;
     font-weight: 700;
     text-transform: capitalize;
@@ -7468,7 +7471,49 @@ del {
     background-image: url(../myimg/home-img-001.jpg)!important;
 }
 
+.services-logistics{
+    background-image: url(../myimg/services-001.jpg)!important;
+}
+
+.services-customs{
+    background-image: url(../myimg/Custom-Brokerage.jpg)!important;
+}
+
+.services-warehouse{
+    background-image: url(../myimg/warehouse-img-001.jpg)!important;
+}
+
+.services-heavy{
+    background-image: url(../myimg/heavy-lifting-001.jpg)!important;
+}
+
+.services-freight{
+    background-image: url(../myimg/services-006.jpg)!important;
+}
+
 .section-getintouch{
     margin-top:40px;
     padding:60px 0px;
+}
+
+.pera-list li{
+    list-style-type: disc;
+}
+
+.pera-list{
+    padding-left:40px;
+    font-family: "Roboto", sans-serif;
+    color: #10285d;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.services-img{
+    height:500px!important;
+}
+
+.zero-padding div{
+    padding:1px;
 }

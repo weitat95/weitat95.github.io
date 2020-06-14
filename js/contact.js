@@ -9,7 +9,9 @@ $(document).ready(function(){
     }, "type the correct answer -_-");
 
     // validate contactForm form
-    $(function() {
+    $(function(event) {
+        event.preventDefault(); 
+
         $('#contactForm').validate({
             rules: {
                 name: {
@@ -35,50 +37,44 @@ $(document).ready(function(){
             },
             messages: {
                 name: {
-                    required: "come on, you have a name, don't you?",
+                    required: "your name must consist of at least 2 characters",
                     minlength: "your name must consist of at least 2 characters"
                 },
                 subject: {
-                    required: "come on, you have a subject, don't you?",
+                    required: "your subject must consist of at least 4 characters",
                     minlength: "your subject must consist of at least 4 characters"
                 },
                 number: {
-                    required: "come on, you have a number, don't you?",
+                    required: "your Number must consist of at least 5 characters",
                     minlength: "your Number must consist of at least 5 characters"
                 },
                 email: {
-                    required: "no email, no message"
+                    required: "please enter a valid email address"
                 },
                 message: {
-                    required: "um...yea, you have to write something to send this form.",
-                    minlength: "thats all? really?"
+                    required: "please write a valid message with a length of 20",
+                    minlength: "please write a valid message"
                 }
             },
             submitHandler: function(form) {
-                $(form).ajaxSubmit({
-                    type:"POST",
-                    data: $(form).serialize(),
-                    url:"contact_process.php",
-                    success: function() {
-                        $('#contactForm :input').attr('disabled', 'disabled');
-                        $('#contactForm').fadeTo( "slow", 1, function() {
-                            $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor','default');
-                            $('#success').fadeIn()
-                            $('.modal').modal('hide');
-		                	$('#success').modal('show');
-                        })
-                    },
-                    error: function() {
-                        $('#contactForm').fadeTo( "slow", 1, function() {
-                            $('#error').fadeIn()
-                            $('.modal').modal('hide');
-		                	$('#error').modal('show');
-                        })
-                    }
-                })
+                // alert($(form).serialize());
+                var xhttp = new XMLHttpRequest();
+                
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    // document.getElementById("demo").innerHTML = this.responseText;
+                    alert('post success!');
+                }
+                };
+                // var data = {name: $(name).val(), subject: $(subject).val(), email: $(email).val(), message: $(message).val()};
+                // xhttp.open("POST", "https://email-app-testtest.herokuapp.com/", true);
+                xhttp.open("POST", "http://localhost:9998", true);
+                xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");    
+                xhttp.send(JSON.stringify($(form)));
+
             }
         })
+        return false;
     })
         
  })(jQuery)
