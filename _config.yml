@@ -1,0 +1,13 @@
+# Site settings
+title:
+email: weitat95@live.com
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+twitter_username: weitat95
+github_username: weitat95
+linkedin_username: weitat95
+
+# Build settings
+markdown: kramdown
