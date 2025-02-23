@@ -3,126 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Business</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <title>Furnimakers</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-lg fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <span class="text-2xl font-bold text-blue-600">YourBrand</span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-gray-600 hover:text-blue-600">Home</a>
-                    <a href="#services" class="text-gray-600 hover:text-blue-600">Services</a>
-                    <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
-                    <a href="#portfolio" class="text-gray-600 hover:text-blue-600">Portfolio</a>
-                    <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
-                </div>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-transparent z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-gray-700 text-xl font-light">furnimakers</a>
+            <div class="flex space-x-8">
+                <a href="#" class="text-gray-700 hover:text-gray-900">about us</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">our services</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">portfolio</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">blog</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">contact us</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section with Power Picture -->
-    <section id="home" class="pt-20">
-        <div class="relative h-screen">
-            <img src="/api/placeholder/1920/1080" alt="Hero Image" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center">
-                <div class="max-w-7xl mx-auto px-4 text-white">
-                    <h1 class="text-5xl font-bold mb-4">Transform Your Business</h1>
-                    <p class="text-xl mb-8">Innovative solutions for modern challenges</p>
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg">Get Started</button>
-                </div>
+    <!-- Hero Section -->
+    <section class="h-screen relative bg-gray-100">
+        <div class="absolute inset-0">
+            <img src="/api/placeholder/1920/1080" alt="Modern Chair" class="w-full h-full object-cover brightness-95">
+        </div>
+        <div class="absolute inset-0 bg-black bg-opacity-10"></div>
+        <div class="relative h-full flex items-center px-6">
+            <div class="max-w-7xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-light text-gray-800 mb-4">Where Every Detail</h1>
+                <h2 class="text-4xl md:text-6xl font-light text-gray-800 mb-8">Tells a Story</h2>
+                <button class="bg-[#D2C4B6] text-white px-8 py-3 rounded-sm hover:bg-[#C4B5A6] transition-colors">Learn more</button>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16">Our Services</h2>
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl font-light text-[#C4B5A6] mb-12">our services.</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <div class="text-blue-600 text-4xl mb-4">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Business Strategy</h3>
-                    <p class="text-gray-600">Comprehensive business analysis and strategic planning for sustainable growth.</p>
+                <div class="bg-[#D2C4B6] p-8 rounded-sm">
+                    <img src="/api/placeholder/40/40" alt="Service Icon" class="mb-4">
+                    <h3 class="text-white text-xl mb-4">our services.</h3>
+                    <p class="text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <div class="text-blue-600 text-4xl mb-4">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Digital Solutions</h3>
-                    <p class="text-gray-600">Custom digital solutions tailored to your business needs.</p>
+                <div class="bg-[#D2C4B6] p-8 rounded-sm">
+                    <img src="/api/placeholder/40/40" alt="Service Icon" class="mb-4">
+                    <h3 class="text-white text-xl mb-4">our services.</h3>
+                    <p class="text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <div class="text-blue-600 text-4xl mb-4">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Marketing</h3>
-                    <p class="text-gray-600">Strategic marketing campaigns to boost your brand presence.</p>
+                <div class="bg-[#D2C4B6] p-8 rounded-sm">
+                    <img src="/api/placeholder/40/40" alt="Service Icon" class="mb-4">
+                    <h3 class="text-white text-xl mb-4">our services.</h3>
+                    <p class="text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <img src="/api/placeholder/600/400" alt="About Us" class="rounded-lg shadow-lg">
+    <!-- About Section -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl font-light text-[#C4B5A6] mb-12">about us</h2>
+            <div class="space-y-20">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl text-gray-700 mb-4">Designed for Living,<br>Not Just Display</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div>
+                        <img src="/api/placeholder/600/400" alt="Interior Design" class="rounded-lg w-full">
+                    </div>
                 </div>
-                <div>
-                    <h2 class="text-4xl font-bold mb-6">About Us</h2>
-                    <p class="text-gray-600 mb-6">We are a team of passionate professionals dedicated to delivering exceptional results for our clients. With years of experience and a commitment to excellence, we help businesses achieve their goals.</p>
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">Learn More</button>
-                </div>
+                <!-- Repeat the pattern twice more with alternating layout -->
             </div>
         </div>
     </section>
-<!-- Portfolio Carousel -->
-    <section id="portfolio" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16">Our Portfolio</h2>
+
+    <!-- Portfolio Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl font-light text-[#C4B5A6] mb-12">our portfolio</h2>
             
-            <div id="portfolio-carousel" class="relative w-full" data-carousel="slide">
+            <div id="portfolio-carousel" class="relative" data-carousel="slide">
                 <!-- Carousel wrapper -->
-                <div class="relative h-96 overflow-hidden rounded-lg">
+                <div class="relative h-[600px] overflow-hidden rounded-lg">
                     <!-- Items -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/api/placeholder/800/600" class="absolute block w-full h-full object-cover" alt="Project 1">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                            <div class="text-center text-white">
-                                <h3 class="text-2xl font-bold mb-2">Project 1</h3>
-                                <p class="text-lg">Web Development</p>
+                        <img src="/api/placeholder/800/600" alt="Elegant Living Room" class="absolute block w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-end">
+                            <div class="text-white p-8">
+                                <h3 class="text-2xl font-light mb-2">Modern Living Room Design</h3>
+                                <p class="text-sm">Minimalist approach with natural lighting</p>
                             </div>
                         </div>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/api/placeholder/800/600" class="absolute block w-full h-full object-cover" alt="Project 2">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                            <div class="text-center text-white">
-                                <h3 class="text-2xl font-bold mb-2">Project 2</h3>
-                                <p class="text-lg">Mobile App</p>
+                        <img src="/api/placeholder/800/600" alt="Contemporary Bedroom" class="absolute block w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-end">
+                            <div class="text-white p-8">
+                                <h3 class="text-2xl font-light mb-2">Serene Bedroom Space</h3>
+                                <p class="text-sm">Comfort meets contemporary design</p>
                             </div>
                         </div>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/api/placeholder/800/600" class="absolute block w-full h-full object-cover" alt="Project 3">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                            <div class="text-center text-white">
-                                <h3 class="text-2xl font-bold mb-2">Project 3</h3>
-                                <p class="text-lg">Brand Identity</p>
+                        <img src="/api/placeholder/800/600" alt="Designer Kitchen" class="absolute block w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-end">
+                            <div class="text-white p-8">
+                                <h3 class="text-2xl font-light mb-2">Luxury Kitchen Design</h3>
+                                <p class="text-sm">Where functionality meets elegance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/api/placeholder/800/600" alt="Office Space" class="absolute block w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-end">
+                            <div class="text-white p-8">
+                                <h3 class="text-2xl font-light mb-2">Modern Home Office</h3>
+                                <p class="text-sm">Productive and stylish workspace</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Slider controls -->
                 <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
                     <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
@@ -140,123 +149,80 @@
                         <span class="sr-only">Next</span>
                     </span>
                 </button>
-                
+
                 <!-- Slider indicators -->
                 <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
                     <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
                     <button type="button" class="w-3 h-3 rounded-full bg-white/50" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
                     <button type="button" class="w-3 h-3 rounded-full bg-white/50" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonials -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16">Client Testimonials</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="/api/placeholder/50/50" alt="Client 1" class="rounded-full w-12 h-12">
-                        <div class="ml-4">
-                            <h4 class="font-bold">John Doe</h4>
-                            <p class="text-gray-600">CEO, Tech Corp</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600">"Outstanding service and exceptional results. Highly recommended!"</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="/api/placeholder/50/50" alt="Client 2" class="rounded-full w-12 h-12">
-                        <div class="ml-4">
-                            <h4 class="font-bold">Jane Smith</h4>
-                            <p class="text-gray-600">Director, Design Studio</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600">"Professional team that delivered beyond our expectations."</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="/api/placeholder/50/50" alt="Client 3" class="rounded-full w-12 h-12">
-                        <div class="ml-4">
-                            <h4 class="font-bold">Mike Johnson</h4>
-                            <p class="text-gray-600">Founder, StartUp Inc</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600">"Transformed our business with innovative solutions."</p>
+                    <button type="button" class="w-3 h-3 rounded-full bg-white/50" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16">Contact Us</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
-                    <div class="space-y-4">
-                        <p class="flex items-center">
-                            <span class="text-blue-600 mr-3">📍</span>
-                            123 Business Street, City, Country
-                        </p>
-                        <p class="flex items-center">
-                            <span class="text-blue-600 mr-3">📞</span>
-                            +1 234 567 890
-                        </p>
-                        <p class="flex items-center">
-                            <span class="text-blue-600 mr-3">✉️</span>
-                            info@yourbrand.com
-                        </p>
+    <!-- Testimonials Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl font-light text-center text-gray-700 mb-12">What Our Clients Say About Us.</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-[#D2C4B6] p-8 rounded-sm">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                            <span class="text-[#D2C4B6] text-2xl">S</span>
+                        </div>
                     </div>
+                    <div class="flex justify-center mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-white text-center text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+                    <p class="text-white text-center text-sm">- Client Name</p>
                 </div>
-                <div class="rounded-lg overflow-hidden">
-                    <img src="/api/placeholder/600/400" alt="Map" class="w-full">
+                <!-- Repeat testimonial card twice more -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="py-20 px-6 bg-[#D2C4B6]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl font-light text-white mb-12 text-center">OUR LOCATION</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="text-white">
+                    <h3 class="font-light mb-4">Address</h3>
+                    <p class="mb-2">123 Main Street</p>
+                    <p class="mb-2">City, State 12345</p>
+                    <p class="mb-4">United States</p>
+                    <p>Tel: +1 234 567 890</p>
+                </div>
+                <div>
+                    <img src="/api/placeholder/600/300" alt="Map" class="w-full rounded-lg">
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">YourBrand</h3>
-                    <p class="text-gray-400">Transforming businesses through innovation</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Terms & Conditions</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.265.07 1.645.07 4.85.07-3.288.167-4.858.62-6.227-2.522-2.521-3.365-2.88-4.935-2.88s-3.68.167-5.05.62C3.68 2.84 2.52 3.68 2.52 5.05c0 1.369.359 2.049.82 2.419.46.37 1.02.52 2.389.52 1.37 0 2.04-.36 2.41-.82.37-.46.52-1.02.52-2.39s-.36-2.04-.82-2.41c-.46-.37-1.02-.52-2.39-.52-1.37 0-2.04.36-2.41.82-.37.46-.52 1.02-.52 2.39s.36 2.04.82 2.41c.46.37 1.02.52 2.39.52 1.37 0 2.04-.36 2.41-.82.37-.46.52-1.02.52-2.39s-.36-2.04-.82-2.41c-.46-.37-1.02-.52-2.39-.52z"/></svg>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
-                    <form class="flex">
-                        <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-l-lg w-full text-gray-900">
-                        <button class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-700">Subscribe</button>
-                    </form>
+    <footer class="py-12 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="text-xl font-light text-[#C4B5A6] mb-4">FURNIMAKERS</h2>
+            </div>
+            <div class="flex justify-center space-x-12 mb-8">
+                <a href="#" class="text-gray-600">CONTACT US</a>
+                <a href="#" class="text-gray-600">TERMS & CONDITIONS</a>
+                <a href="#" class="text-gray-600">POLICIES</a>
+            </div>
+            <div class="text-center mb-8">
+                <p class="text-gray-600 text-sm">FOLLOW US</p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="text-gray-600">Facebook</a>
+                    <a href="#" class="text-gray-600">Instagram</a>
+                    <a href="#" class="text-gray-600">Twitter</a>
                 </div>
             </div>
-            <div class="mt-12 pt-8 border-t border-gray-800 text-center">
-                <p class="text-gray-400">&copy; 2025 YourBrand. All rights reserved. ™</p>
+            <div class="text-center text-gray-600 text-sm">
+                © 2025 FURNIMAKERS All Rights Reserved.
             </div>
         </div>
     </footer>
